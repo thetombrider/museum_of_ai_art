@@ -8,8 +8,6 @@ name: Deploy Pages
 on:
   push:
     branches: [main]
-    paths:
-      - "gallery/**"
   workflow_dispatch:
 
 # Hard requirement: allow only one Pages deployment at a time, and never
