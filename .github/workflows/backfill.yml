@@ -25,80 +25,28 @@ permissions:
   actions: write
 
 jobs:
+  plan:
+    # GitHub Actions can't size a matrix directly from a workflow_dispatch
+    # input, so this job computes the concrete offset list (0..days-1) and
+    # the backfill matrix below is built from its output via fromJson.
+    runs-on: ubuntu-latest
+    outputs:
+      offsets: ${{ steps.offsets.outputs.offsets }}
+    steps:
+      - name: Compute offsets
+        id: offsets
+        run: |
+          python3 -c "import json; print('offsets=' + json.dumps(list(range(${{ inputs.days }}))))" >> "$GITHUB_OUTPUT"
+
   backfill:
-    # GitHub Actions can't size a matrix from a workflow_dispatch input, so
-    # we always declare the full 60 offsets and skip unused ones at the
-    # orchestration level. The `if` below runs *before* the runner is
-    # allocated, so skipped jobs cost no minutes; only the first N jobs
-    # (where N = inputs.days) actually run.
-    if: ${{ matrix.offset < inputs.days }}
+    needs: plan
     runs-on: ubuntu-latest
     timeout-minutes: 20
     strategy:
       max-parallel: 4
       fail-fast: false
       matrix:
-        offset:
-          - 0
-          - 1
-          - 2
-          - 3
-          - 4
-          - 5
-          - 6
-          - 7
-          - 8
-          - 9
-          - 10
-          - 11
-          - 12
-          - 13
-          - 14
-          - 15
-          - 16
-          - 17
-          - 18
-          - 19
-          - 20
-          - 21
-          - 22
-          - 23
-          - 24
-          - 25
-          - 26
-          - 27
-          - 28
-          - 29
-          - 30
-          - 31
-          - 32
-          - 33
-          - 34
-          - 35
-          - 36
-          - 37
-          - 38
-          - 39
-          - 40
-          - 41
-          - 42
-          - 43
-          - 44
-          - 45
-          - 46
-          - 47
-          - 48
-          - 49
-          - 50
-          - 51
-          - 52
-          - 53
-          - 54
-          - 55
-          - 56
-          - 57
-          - 58
-          - 59
+        offset: ${{ fromJson(needs.plan.outputs.offsets) }}
     env:
       MUSEUM_REPO_ROOT: ${{ github.workspace }}
     steps:
