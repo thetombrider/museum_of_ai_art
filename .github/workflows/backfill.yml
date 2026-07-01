@@ -76,3 +76,19 @@ jobs:
           fi
           git commit -m "backfill: ${{ steps.date.outputs.target }}"
           git push
+
+      - name: Trigger Pages deploy
+        if: success() && matrix.offset == 0
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Only the first (newest) backfill job dispatches Pages; the rest
+            // are caught by the push-trigger on the repo. Avoids stampeding
+            // the Pages workflow when 60 jobs all push in parallel.
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'pages.yml',
+              ref: 'main',
+            });
+            console.log('Dispatched Pages deploy.');

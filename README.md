@@ -60,10 +60,12 @@ no third-party services beyond the two APIs, and idempotent per calendar day
    - `WAVESPEED_AI_API_KEY` — from [wavespeed.ai](https://wavespeed.ai). Funds
      image generation on WaveSpeed's Flux 2 Dev endpoint.
 3. **Enable GitHub Pages** under *Settings → Pages*:
-   - Source: *Deploy from a branch*
-   - Branch: `main`, folder: `/gallery`
+   - Source: *GitHub Actions*
+   (No branch or folder selection is needed — the `Deploy Pages` workflow
+   takes care of the rest.)
 4. **Wait for the cron**, or trigger the *Backfill* workflow from the Actions
-   tab to seed the last 7 days of paintings immediately.
+   tab to seed the last 7 days of paintings immediately. The site goes live
+   as soon as the first deploy completes (~30 s).
 
 That's it. The site is live at `https://<your-username>.github.io/<repo>/`.
 
@@ -126,8 +128,9 @@ one of the `:free` tier models for $0 text cost).
 
 ```
 .github/workflows/
-  daily.yml        # cron at 06:00 UTC + push trigger
+  daily.yml        # cron at 06:00 UTC + push trigger; commits a painting and dispatches Pages
   backfill.yml     # manual seed of past N days
+  pages.yml        # builds ./gallery and deploys to GitHub Pages
 scripts/
   curator.py       # the only script that matters
 gallery/

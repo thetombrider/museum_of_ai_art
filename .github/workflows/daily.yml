@@ -62,3 +62,19 @@ jobs:
           DATE=$(date -u +%Y-%m-%d)
           git commit -m "curate: hang today's painting ($DATE)"
           git push
+
+      - name: Trigger Pages deploy
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Kick the Pages workflow so the new painting is live without
+            // waiting for the next push. Use a small dedupe window so we
+            // don't queue a redundant run if push already triggered it.
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'pages.yml',
+              ref: 'main',
+            });
+            console.log('Dispatched Pages deploy.');
