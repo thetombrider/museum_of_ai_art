@@ -18,11 +18,20 @@ concurrency:
   group: museum-curator
   cancel-in-progress: false
 
+# contents: write — to git commit + push new paintings
+# actions: write  — to dispatch the pages.yml workflow on the newest job
 permissions:
   contents: write
+  actions: write
 
 jobs:
   backfill:
+    # GitHub Actions can't size a matrix from a workflow_dispatch input, so
+    # we always declare the full 60 offsets and skip unused ones at the
+    # orchestration level. The `if` below runs *before* the runner is
+    # allocated, so skipped jobs cost no minutes; only the first N jobs
+    # (where N = inputs.days) actually run.
+    if: ${{ matrix.offset < inputs.days }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
     strategy:
@@ -90,8 +99,6 @@ jobs:
           - 57
           - 58
           - 59
-        # Only the first N offsets (where N = inputs.days) actually do work;
-        # the rest short-circuit immediately because today's exhibit exists.
     env:
       MUSEUM_REPO_ROOT: ${{ github.workspace }}
     steps:
@@ -117,7 +124,6 @@ jobs:
           echo "Curating $TARGET"
 
       - name: Curate day
-        if: ${{ matrix.offset < inputs.days }}
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           WAVESPEED_AI_API_KEY: ${{ secrets.WAVESPEED_AI_API_KEY }}
@@ -125,7 +131,6 @@ jobs:
         run: python scripts/curator.py
 
       - name: Commit
-        if: ${{ matrix.offset < inputs.days }}
         run: |
           git config user.name "museum-curator[bot]"
           git config user.email "museum-curator[bot]@users.noreply.github.com"
@@ -139,7 +144,7 @@ jobs:
 
       - name: Trigger Pages deploy
         if: success() && matrix.offset == 0
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             // Only the first (newest) backfill job dispatches Pages; the rest
