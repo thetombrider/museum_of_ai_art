@@ -1,0 +1,78 @@
+name: Backfill
+
+# Seeds the gallery with the last N days of paintings. Each day is one job,
+# runs in parallel, and is idempotent: a day that already has an exhibit is
+# skipped by the curator script. Trigger manually from the Actions tab.
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: "Number of past days to backfill (1-60)"
+        required: true
+        default: "7"
+        type: choice
+        options: ["3", "7", "14", "30", "60"]
+
+concurrency:
+  group: museum-curator
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      max-parallel: 4
+      fail-fast: false
+      matrix:
+        offset: ${{ fromJson(format('[{0}]', range(0, 60))) }}
+        # Only the first N offsets (where N = inputs.days) actually do work;
+        # the rest short-circuit immediately because today's exhibit exists.
+    env:
+      MUSEUM_REPO_ROOT: ${{ github.workspace }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Compute target date
+        id: date
+        # GNU date supports -d "N days ago". Works on the GitHub-hosted runner.
+        run: |
+          TARGET=$(date -u -d "${{ matrix.offset }} days ago" +%Y-%m-%d)
+          echo "target=$TARGET" >> "$GITHUB_OUTPUT"
+          echo "Curating $TARGET"
+
+      - name: Curate day
+        if: ${{ matrix.offset < inputs.days }}
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FAL_KEY: ${{ secrets.FAL_KEY }}
+          MUSEUM_DATE: ${{ steps.date.outputs.target }}
+        run: python scripts/curator.py
+
+      - name: Commit
+        if: ${{ matrix.offset < inputs.days }}
+        run: |
+          git config user.name "museum-curator[bot]"
+          git config user.email "museum-curator[bot]@users.noreply.github.com"
+          git add gallery/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit for offset ${{ matrix.offset }}."
+            exit 0
+          fi
+          git commit -m "backfill: ${{ steps.date.outputs.target }}"
+          git push

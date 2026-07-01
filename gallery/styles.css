@@ -1,0 +1,224 @@
+/* Museum of AI Art — static site styles
+   Palette: warm parchment, ink black, a single dusty accent.
+   Type: a serif for display, a humanist sans for body, small caps for labels. */
+
+:root {
+  --paper: #f4efe6;
+  --paper-deep: #ebe3d4;
+  --ink: #1a1a1a;
+  --ink-soft: #4a4a4a;
+  --rule: #c8bfae;
+  --accent: #8a3324;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua",
+    Georgia, serif;
+  --sans: "Inter", "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--rule); }
+a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+
+img { max-width: 100%; display: block; }
+
+/* ----- masthead --------------------------------------------------------- */
+
+.masthead {
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper);
+}
+.masthead-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 32px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.logo-block { display: flex; align-items: center; gap: 18px; }
+.logo-mark { color: var(--ink); }
+.logo-text h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.01em;
+  margin: 0;
+  line-height: 1.1;
+}
+.tagline {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-soft);
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+.meta-nav { display: flex; gap: 28px; font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase; }
+.meta-nav a { border-bottom: none; }
+.meta-nav a:hover { color: var(--accent); }
+
+/* ----- layout ----------------------------------------------------------- */
+
+main { max-width: 1100px; margin: 0 auto; padding: 48px 32px 80px; }
+
+section { margin-bottom: 72px; }
+
+.kicker {
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+
+.section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 28px; }
+.section-head h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.section-sub { color: var(--ink-soft); font-style: italic; margin: 0; font-size: 14px; }
+
+/* ----- featured --------------------------------------------------------- */
+
+.featured {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 32px;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+}
+.featured .frame {
+  background: #fff;
+  padding: 14px 14px 38px;
+  border: 1px solid var(--ink);
+  box-shadow: 0 1px 0 var(--ink);
+}
+.featured .frame img { width: 100%; height: auto; display: block; }
+.featured h3 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 28px;
+  margin: 0 0 6px;
+  line-height: 1.15;
+}
+.featured .year {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--accent);
+  font-size: 16px;
+  margin: 0 0 18px;
+}
+.featured .medium {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin: 0 0 22px;
+}
+.featured .statement { font-size: 15px; line-height: 1.7; }
+.featured .source {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.featured .source em { font-style: italic; }
+
+.loading { font-style: italic; color: var(--ink-soft); }
+
+/* ----- collection grid -------------------------------------------------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 36px 28px;
+}
+.card .frame {
+  background: #fff;
+  padding: 10px 10px 28px;
+  border: 1px solid var(--ink);
+  transition: transform 200ms ease;
+}
+.card a:hover .frame { transform: translateY(-2px); }
+.card .frame img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: cover; }
+.card .meta { padding: 14px 4px 0; }
+.card .card-date {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 6px;
+}
+.card .card-title {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 1.2;
+  margin: 0 0 4px;
+  color: var(--ink);
+}
+.card .card-year {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--accent);
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+.card .card-excerpt {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ----- prose ------------------------------------------------------------ */
+
+.prose p { max-width: 62ch; }
+.prose h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0 0 18px;
+  letter-spacing: 0.01em;
+}
+.fineprint { font-size: 13px; color: var(--ink-soft); font-style: italic; }
+
+/* ----- footer ----------------------------------------------------------- */
+
+footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+  padding: 28px 32px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--ink-soft);
+  letter-spacing: 0.05em;
+}
+
+/* ----- responsive ------------------------------------------------------- */
+
+@media (max-width: 760px) {
+  .featured { grid-template-columns: 1fr; gap: 28px; padding: 22px; }
+  .masthead-inner { padding: 22px; }
+  main { padding: 32px 22px 60px; }
+  .logo-text h1 { font-size: 24px; }
+  .meta-nav { gap: 18px; font-size: 12px; }
+}

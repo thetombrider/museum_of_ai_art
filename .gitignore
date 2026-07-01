@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.local
+
+# Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Local test artifacts
+scripts/.cache/
+test_run/
