@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-30",
+  "year": 1974,
+  "event": {
+    "text": "Municipal workers in Baltimore, Maryland, went on strike seeking higher wages and better conditions.",
+    "page_title": "Baltimore",
+    "page_extract": "Baltimore, also known as Baltimore City, is the most populous city in the U.S. state of Maryland. It is the 30th-most populous U.S. city with a population of 585,708 at the 2020 census and estimated at 569,997 in 2025, while the Baltimore metropolitan area at 2.86 million residents is the 22nd-largest metropolitan area in the nation. The city is also part of the Washington–Baltimore combined statistical area, which had a population of 9.97 million in 2020. Baltimore was designated as an independent city by the Constitution of Maryland in 1851. Though not located under the jurisdiction of any county in the state, it forms part of the Central Maryland region together with the surrounding county that shares its name.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Fell%27s_Point_Aerial_2022.jpg/330px-Fell%27s_Point_Aerial_2022.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Baltimore"
+  },
+  "title": "The Picket Line's Dawn",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I was drawn to the quiet resolve in their eyes. The morning light caught the creases in their coats, each one a story of waiting. These are the hands that hold a city together, even when the city forgets them.",
+  "image_prompt": "Early morning light filters through the bare branches of a city park, casting long shadows across a line of figures standing before a sandstone municipal building. The workers, in worn coats and caps, hold hand-lettered signs with simple demands. One figure looks down at his boots, another stares straight ahead, her breath visible in the cold air. The sky is a pale gray-blue, and the only color comes from a faded red scarf and the rust on a nearby bench. Brushwork is visible in the textured pavement and the rough brick wall behind them.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-01T15:19:45Z"
+}
