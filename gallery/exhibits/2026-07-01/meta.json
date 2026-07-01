@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-01",
+  "year": 1979,
+  "event": {
+    "text": "Sony introduced the Walkman, a portable audio player that changed listening habits by offering users the ability to play one's own choice of music.",
+    "page_title": "Sony",
+    "page_extract": "Sony Group Corporation, commonly referred to as Sony, is a Japanese multinational conglomerate headquartered at Sony City in Minato, Tokyo, Japan. The Sony Group encompasses various businesses, including electronics, imaging and sensing, film and television, music, video games, and others.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Sony_headquaters_1.jpg/330px-Sony_headquaters_1.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Sony"
+  },
+  "title": "The Listener, MCMLXXIX",
+  "medium": "Oil on linen, 2025",
+  "artist_statement": "I remember the first time I heard music that was mine alone. The world receded into a soft blur, leaving only the voice in my ear. This painting is an attempt to capture that moment of isolation and intimacy.",
+  "image_prompt": "A young person sits alone on a wooden bench in a city park, autumn leaves scattered on the ground. They hold a small metallic rectangle in one hand, thin wires trailing to their ears. The late afternoon sun casts long shadows across the gravel path, illuminating the figure's profile. The person's eyes are closed, head slightly tilted, lost in a private soundscape. The background shows trees with golden and orange foliage, slightly blurred, focusing attention on the intimate moment. Painterly brushwork, controlled palette of muted greens, golds, and warm browns, with a single light source from the left.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-01T14:49:35Z"
+}
