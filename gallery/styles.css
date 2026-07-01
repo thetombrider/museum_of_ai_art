@@ -201,6 +201,103 @@ section { margin-bottom: 72px; }
 }
 .fineprint { font-size: 13px; color: var(--ink-soft); font-style: italic; }
 
+/* ----- exhibit detail page --------------------------------------------- */
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  border-bottom: none;
+}
+.back-link:hover { color: var(--accent); }
+
+.exhibit {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 32px;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+}
+.exhibit-frame {
+  background: #fff;
+  padding: 14px 14px 38px;
+  border: 1px solid var(--ink);
+  box-shadow: 0 1px 0 var(--ink);
+}
+.exhibit-frame img { width: 100%; height: auto; display: block; }
+.exhibit-card h2 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 30px;
+  margin: 0 0 6px;
+  line-height: 1.15;
+}
+.exhibit-card .year {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--accent);
+  font-size: 16px;
+  margin: 0 0 18px;
+}
+.exhibit-card .medium {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 14px;
+  margin: 0 0 22px;
+}
+.exhibit-card .statement { font-size: 15px; line-height: 1.7; margin: 0; }
+.exhibit-card .source {
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--rule);
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.exhibit-card .source em { font-style: italic; }
+
+.exhibit-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 40px;
+}
+.exhibit-nav a {
+  display: block;
+  padding: 18px 22px;
+  background: var(--paper-deep);
+  border: 1px solid var(--rule);
+}
+.exhibit-nav a:hover { border-color: var(--accent); }
+.exhibit-nav .nav-prev { text-align: left; }
+.exhibit-nav .nav-next { text-align: right; grid-column: 2; }
+.exhibit-nav .nav-label {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 6px;
+}
+.exhibit-nav .nav-title {
+  display: block;
+  font-family: var(--serif);
+  font-size: 16px;
+  color: var(--ink);
+  line-height: 1.25;
+  margin-bottom: 2px;
+}
+.exhibit-nav .nav-date {
+  display: block;
+  font-size: 12px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+
 /* ----- footer ----------------------------------------------------------- */
 
 footer {
@@ -221,4 +318,8 @@ footer {
   main { padding: 32px 22px 60px; }
   .logo-text h1 { font-size: 24px; }
   .meta-nav { gap: 18px; font-size: 12px; }
+  .exhibit { grid-template-columns: 1fr; gap: 28px; padding: 22px; }
+  .exhibit-card h2 { font-size: 24px; }
+  .exhibit-nav { grid-template-columns: 1fr; }
+  .exhibit-nav .nav-next { grid-column: 1; text-align: left; }
 }

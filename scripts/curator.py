@@ -31,6 +31,7 @@ import sys
 import textwrap
 import time
 from pathlib import Path
+from string import Template
 from typing import Any
 
 import requests
@@ -468,16 +469,224 @@ def write_artifact(date: dt.date, event: dict[str, Any], curator: dict[str, str]
     return meta
 
 
+def _excerpt(text: str, n: int) -> str:
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if len(text) <= n:
+        return text
+    return text[: n - 1].rstrip() + "…"
+
+
+def _html_escape(s: Any) -> str:
+    return (
+        str(s)
+        .replace("&", "&amp;")
+        .replace("<", "&lt;")
+        .replace(">", "&gt;")
+        .replace('"', "&quot;")
+        .replace("'", "&#39;")
+    )
+
+
+def _romanize(year: Any) -> str:
+    if year is None:
+        return ""
+    try:
+        n = int(year)
+    except (TypeError, ValueError):
+        return ""
+    if not n or n < 1:
+        return ""
+    pairs = [
+        ("M", 1000), ("CM", 900), ("D", 500), ("CD", 400),
+        ("C", 100), ("XC", 90), ("L", 50), ("XL", 40),
+        ("X", 10), ("IX", 9), ("V", 5), ("IV", 4), ("I", 1),
+    ]
+    out: list[str] = []
+    for r, v in pairs:
+        while n >= v:
+            out.append(r)
+            n -= v
+    return "".join(out)
+
+
+# ----------------------------- exhibit detail page --------------------------
+
+
+# Minimal data-URL favicon matching the main page, kept inline so the detail
+# pages are self-contained and don't depend on a binary asset.
+_FAVICON = (
+    "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' "
+    "viewBox='0 0 100 100'%3E%3Crect width='100' height='100' "
+    "fill='%23f4efe6'/%3E%3Crect x='25' y='20' width='50' height='60' "
+    "fill='none' stroke='%231a1a1a' stroke-width='3'/%3E%3C/svg%3E"
+)
+
+# Template uses $name placeholders (string.Template) so the literal CSS
+# braces in the stylesheet link don't need escaping.
+_PAGE_TEMPLATE = Template(
+    """<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>$title — Museum of AI Art</title>
+    <meta name="description" content="$description" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" href="$favicon" />
+  </head>
+  <body>
+    <header class="masthead">
+      <div class="masthead-inner">
+        <div class="logo-block">
+          <div class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" width="48" height="48">
+              <rect x="22" y="18" width="56" height="64" fill="none" stroke="currentColor" stroke-width="3" />
+              <line x1="14" y1="86" x2="86" y2="86" stroke="currentColor" stroke-width="3" />
+            </svg>
+          </div>
+          <div class="logo-text">
+            <h1>Museum of AI Art</h1>
+            <p class="tagline">An autonomous, self-curating institution. Est. 2026.</p>
+          </div>
+        </div>
+        <nav class="meta-nav">
+          <a href="../../#collection">Collection</a>
+          <a href="../../#about">About</a>
+          <a href="../../#colophon">Colophon</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <a href="../../" class="back-link">← Back to the collection</a>
+      <section class="exhibit">
+        <div class="exhibit-frame">
+          <img src="$image" alt="$title" />
+        </div>
+        <div class="exhibit-card">
+          <p class="card-date">$date</p>
+          <h2>$title</h2>
+          $year_block
+          $medium_block
+          <p class="statement">$statement</p>
+          <div class="source">$source</div>
+        </div>
+      </section>
+$nav
+    </main>
+
+    <footer>
+      <p>© Museum of AI Art. The collection is in the public domain; the code is MIT.</p>
+    </footer>
+  </body>
+</html>
+"""
+)
+
+
+def _render_exhibit_page(
+    meta: dict[str, Any],
+    prev_meta: dict[str, Any] | None,
+    next_meta: dict[str, Any] | None,
+) -> str:
+    title = _html_escape(meta.get("title") or "Untitled")
+    date = _html_escape(meta.get("date") or "")
+    image = _html_escape(meta.get("image") or "painting.jpg")
+    statement = _html_escape(meta.get("artist_statement") or "")
+    medium = (meta.get("medium") or "").strip()
+    description = _html_escape(_excerpt(meta.get("artist_statement", ""), 160))
+
+    rom = _romanize(meta.get("year"))
+    year_block = f'<p class="year">Anno {rom}</p>' if rom else ""
+    medium_block = (
+        f'<p class="medium">{_html_escape(medium)}</p>' if medium else ""
+    )
+
+    event = meta.get("event") or {}
+    event_text = (event.get("text") or "").strip()
+    wiki_url = (event.get("wikipedia_url") or "").strip()
+    if wiki_url:
+        source = (
+            f'Responding to: {_html_escape(event_text)} '
+            f'(<a href="{_html_escape(wiki_url)}" target="_blank" '
+            f'rel="noopener">Wikipedia</a>)'
+        )
+    elif event_text:
+        source = f'Responding to: {_html_escape(event_text)}'
+    else:
+        source = "<em>source unrecorded</em>"
+
+    nav_parts: list[str] = []
+    # "Previous" = chronologically older (one exhibit further down the
+    # newest-first list). "Next" = chronologically newer.
+    if prev_meta:
+        prev_date = _html_escape(prev_meta.get("date") or "")
+        prev_title = _html_escape(prev_meta.get("title") or "Untitled")
+        nav_parts.append(
+            f'      <a class="nav-prev" href="../{prev_date}/">\n'
+            f'        <span class="nav-label">← Previous</span>\n'
+            f'        <span class="nav-title">{prev_title}</span>\n'
+            f'        <span class="nav-date">{prev_date}</span>\n'
+            f'      </a>'
+        )
+    if next_meta:
+        next_date = _html_escape(next_meta.get("date") or "")
+        next_title = _html_escape(next_meta.get("title") or "Untitled")
+        nav_parts.append(
+            f'      <a class="nav-next" href="../{next_date}/">\n'
+            f'        <span class="nav-label">Next →</span>\n'
+            f'        <span class="nav-title">{next_title}</span>\n'
+            f'        <span class="nav-date">{next_date}</span>\n'
+            f'      </a>'
+        )
+    nav = (
+        '      <nav class="exhibit-nav">\n' + "\n".join(nav_parts) + "\n      </nav>"
+        if nav_parts
+        else ""
+    )
+
+    return _PAGE_TEMPLATE.substitute(
+        title=title,
+        date=date,
+        image=image,
+        statement=statement,
+        description=description,
+        favicon=_FAVICON,
+        year_block=year_block,
+        medium_block=medium_block,
+        source=source,
+        nav=nav,
+    )
+
+
+def write_exhibit_pages(metas: list[dict[str, Any]]) -> None:
+    """Write exhibits/<date>/index.html for every exhibit. Idempotent."""
+    for i, meta in enumerate(metas):
+        date_str = meta.get("date") or ""
+        if not date_str:
+            continue
+        prev_meta = metas[i + 1] if i + 1 < len(metas) else None
+        next_meta = metas[i - 1] if i - 1 >= 0 else None
+        page = _render_exhibit_page(meta, prev_meta, next_meta)
+        (EXHIBITS_DIR / date_str / "index.html").write_text(
+            page, encoding="utf-8"
+        )
+
+
 def update_index() -> list[dict[str, Any]]:
-    """Rebuild exhibit.json from the filesystem. Sort newest first."""
+    """Rebuild exhibit.json from the filesystem. Sort newest first.
+    Also writes a per-exhibit index.html (detail page) for every exhibit,
+    so card links resolve to a real page on GitHub Pages."""
     if not EXHIBITS_DIR.exists():
         EXHIBITS_DIR.mkdir(parents=True, exist_ok=True)
+    metas: list[dict[str, Any]] = []
     entries: list[dict[str, Any]] = []
     for meta_path in sorted(EXHIBITS_DIR.glob("*/meta.json"), reverse=True):
         try:
             meta = json.loads(meta_path.read_text())
         except json.JSONDecodeError:
             continue
+        metas.append(meta)
         entries.append(
             {
                 "date": meta.get("date"),
@@ -490,14 +699,8 @@ def update_index() -> list[dict[str, Any]]:
             }
         )
     INDEX_PATH.write_text(json.dumps(entries, ensure_ascii=False, indent=2))
+    write_exhibit_pages(metas)
     return entries
-
-
-def _excerpt(text: str, n: int) -> str:
-    text = re.sub(r"\s+", " ", text or "").strip()
-    if len(text) <= n:
-        return text
-    return text[: n - 1].rstrip() + "…"
 
 
 # ----------------------------- main -----------------------------------------
