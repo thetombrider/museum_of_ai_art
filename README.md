@@ -18,15 +18,16 @@ retire, and we do not edit.
         │
         ▼
  ┌────────────────────┐    ┌─────────────────────┐
- │ Wikipedia          │    │ Claude Haiku         │
- │ On-This-Day feed   │──▶ │ (title, medium,      │
- │ (free, no key)     │    │  statement, prompt)  │
+ │ Wikipedia          │    │ OSS LLM via         │
+ │ On-This-Day feed   │──▶ │ OpenRouter          │
+ │ (free, no key)     │    │ (title, medium,      │
+                      │    │  statement, prompt)  │
  └────────────────────┘    └──────────┬──────────┘
                                       │
                                       ▼
                             ┌─────────────────────┐
-                            │ fal.ai Flux (dev)   │
-                            │ 1024×768 oil        │
+                            │ WaveSpeed AI Flux   │
+                            │ (1024×768 oil)      │
                             └──────────┬──────────┘
                                       │
                                       ▼
@@ -54,8 +55,10 @@ no third-party services beyond the two APIs, and idempotent per calendar day
 
 1. **Fork this repository.**
 2. **Add two secrets** under *Settings → Secrets and variables → Actions*:
-   - `ANTHROPIC_API_KEY` — from [console.anthropic.com](https://console.anthropic.com).
-   - `FAL_KEY` — from [fal.ai/dashboard/keys](https://fal.ai/dashboard/keys).
+   - `OPENROUTER_API_KEY` — from [openrouter.ai/keys](https://openrouter.ai/keys).
+     Funds the curator LLM (the default free OSS tier is also supported).
+   - `WAVESPEED_AI_API_KEY` — from [wavespeed.ai](https://wavespeed.ai). Funds
+     image generation on WaveSpeed's Flux 2 Dev endpoint.
 3. **Enable GitHub Pages** under *Settings → Pages*:
    - Source: *Deploy from a branch*
    - Branch: `main`, folder: `/gallery`
@@ -68,16 +71,16 @@ That's it. The site is live at `https://<your-username>.github.io/<repo>/`.
 
 ```bash
 pip install -r requirements.txt
-export ANTHROPIC_API_KEY=...
-export FAL_KEY=...
-export MUSEUM_DRY_RUN=1      # skip fal.ai, write a 1×1 stub painting
-export MUSEUM_DATE=2024-07-04  # optional: backfill a specific day
+export OPENROUTER_API_KEY=...
+export WAVESPEED_AI_API_KEY=...
+export MUSEUM_DRY_RUN=1         # skip WaveSpeed, write a 1×1 stub painting
+export MUSEUM_DATE=2024-07-04   # optional: backfill a specific day
 python scripts/curator.py
 ```
 
 `MUSEUM_DRY_RUN=1` is useful for testing the pipeline end-to-end without
-incurring image-generation cost. Set `MUSEUM_FAL_MODEL` and
-`MUSEUM_HAIKU_MODEL` to swap models without editing code.
+incurring image-generation cost. Set `MUSEUM_OPENROUTER_MODEL` and
+`MUSEUM_WAVESPEED_MODEL` to swap models without editing code.
 
 ---
 
@@ -86,13 +89,15 @@ incurring image-generation cost. Set `MUSEUM_FAL_MODEL` and
 | Component                | Cost per day                |
 |--------------------------|-----------------------------|
 | Wikipedia REST API       | Free                        |
-| Claude Haiku 4.5         | ≈ $0.005 (one ~700-token gen) |
-| fal.ai Flux dev, 1 image | ≈ $0.05                     |
+| OpenRouter OSS curator   | Free (default `:free` model) or ≈ $0.0001 |
+| WaveSpeed AI Flux 2 dev  | ≈ $0.012 per image          |
 | GitHub Actions minutes   | Free (well under 1 min/day) |
 | GitHub Pages bandwidth   | Free                        |
-| **Total**                | **≈ $0.05 / day**           |
+| **Total**                | **≈ $0.012 / day**          |
 
-A month of operation is roughly the price of a sandwich. Most of that is Flux.
+A month of operation is roughly the price of a sandwich. Most of that is
+image generation, and it has dropped ~4× since switching from fal.ai to
+WaveSpeed.
 
 ---
 

@@ -2,19 +2,23 @@
 """
 Museum of AI Art — daily curator.
 
-Fetches a random "on this day" historical event from Wikipedia, asks Claude Haiku
-to write a pretentious title and artist statement plus a Flux image prompt, then
-submits the prompt to fal.ai's Flux model. The resulting painting is committed
-to the repo alongside its metadata; the git repo itself is the database.
+Fetches a random "on this day" historical event from Wikipedia, asks an OSS
+language model (via OpenRouter) to write a pretentious title and artist
+statement plus an image prompt, then submits that prompt to WaveSpeed AI's
+Flux model. The resulting painting is committed to the repo alongside its
+metadata; the git repo itself is the database.
 
 Designed to be idempotent: re-running for the same day is a no-op.
 
 Environment variables:
-    ANTHROPIC_API_KEY   required
-    FAL_KEY             required
-    MUSEUM_DATE         optional, override "today" as YYYY-MM-DD (for testing/backfill)
-    MUSEUM_REPO_ROOT    optional, defaults to parent of this file's parent
-    MUSEUM_DRY_RUN      if "1", skip fal.ai and write a stub painting instead
+    OPENROUTER_API_KEY   required (OpenRouter auth for the curator LLM)
+    WAVESPEED_AI_API_KEY required (WaveSpeed AI auth for image generation)
+    MUSEUM_DATE          optional, override "today" as YYYY-MM-DD (for testing/backfill)
+    MUSEUM_REPO_ROOT     optional, defaults to parent of this file's parent
+    MUSEUM_DRY_RUN       if "1", skip WaveSpeed and write a stub painting instead
+    MUSEUM_OPENROUTER_MODEL  optional, override the curator LLM (default: a free OSS model)
+    MUSEUM_WAVESPEED_MODEL   optional, override the image model path
+    MUSEUM_WAVESPEED_SIZE    optional, override the image size (default "1024*768")
 """
 from __future__ import annotations
 
@@ -35,12 +39,19 @@ import requests
 # ----------------------------- configuration --------------------------------
 
 WIKI_BASE = "https://en.wikipedia.org/api/rest_v1/feed/onthisday"
-ANTHROPIC_URL = "https://api.anthropic.com/v1/messages"
-ANTHROPIC_MODEL = os.environ.get("MUSEUM_HAIKU_MODEL", "claude-haiku-4-5")
-ANTHROPIC_VERSION = "2023-06-01"
 
-FAL_MODEL = os.environ.get("MUSEUM_FAL_MODEL", "fal-ai/flux/dev")
-FAL_IMAGE_SIZE = os.environ.get("MUSEUM_FAL_SIZE", "landscape_4_3")
+# OpenRouter (curator LLM). Default is a free, open-weight model.
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+OPENROUTER_MODEL = os.environ.get(
+    "MUSEUM_OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"
+)
+
+# WaveSpeed AI (image generation). Path is appended to /api/v3/.
+WAVESPEED_BASE = "https://api.wavespeed.ai/api/v3"
+WAVESPEED_MODEL = os.environ.get(
+    "MUSEUM_WAVESPEED_MODEL", "wavespeed-ai/flux-2-dev/text-to-image"
+)
+WAVESPEED_SIZE = os.environ.get("MUSEUM_WAVESPEED_SIZE", "1024*768")
 
 USER_AGENT = "MuseumOfAIArt/1.0 (https://github.com/; curator bot)"
 
@@ -117,10 +128,10 @@ def event_summary(event: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-# ----------------------------- claude haiku ---------------------------------
+# ----------------------------- curator llm ----------------------------------
 
 
-HAIKU_SYSTEM = textwrap.dedent(
+CURATOR_SYSTEM = textwrap.dedent(
     """
     You are the resident curator of the Museum of AI Art, a small but extremely
     pretentious institution that hangs a single new painting every day. Each
@@ -158,47 +169,47 @@ HAIKU_SYSTEM = textwrap.dedent(
 ).strip()
 
 
-def call_haiku(event: dict[str, Any]) -> dict[str, str]:
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
+def call_curator(event: dict[str, Any]) -> dict[str, str]:
+    api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
-        raise RuntimeError("ANTHROPIC_API_KEY is not set")
+        raise RuntimeError("OPENROUTER_API_KEY is not set")
     user_payload = json.dumps(event, ensure_ascii=False, indent=2)
     body = {
-        "model": ANTHROPIC_MODEL,
+        "model": OPENROUTER_MODEL,
         "max_tokens": 1024,
-        "system": HAIKU_SYSTEM,
+        "temperature": 0.8,
+        "response_format": {"type": "json_object"},
         "messages": [
+            {"role": "system", "content": CURATOR_SYSTEM},
             {
                 "role": "user",
                 "content": (
                     "Today's historical event:\n\n" + user_payload + "\n\n"
                     "Return JSON only."
                 ),
-            }
+            },
         ],
     }
     r = requests.post(
-        ANTHROPIC_URL,
+        OPENROUTER_URL,
         headers={
-            "x-api-key": api_key,
-            "anthropic-version": ANTHROPIC_VERSION,
-            "content-type": "application/json",
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
         },
         json=body,
-        timeout=120,
+        timeout=180,
     )
     if r.status_code >= 400:
-        raise RuntimeError(f"Anthropic API error {r.status_code}: {r.text[:500]}")
+        raise RuntimeError(f"OpenRouter API error {r.status_code}: {r.text[:500]}")
     data = r.json()
-    text = "".join(
-        block.get("text", "")
-        for block in data.get("content", [])
-        if block.get("type") == "text"
-    )
-    return parse_haiku_json(text)
+    try:
+        text = data["choices"][0]["message"]["content"]
+    except (KeyError, IndexError, TypeError) as e:
+        raise RuntimeError(f"OpenRouter returned unexpected payload: {data}") from e
+    return parse_curator_json(text)
 
 
-def parse_haiku_json(text: str) -> dict[str, str]:
+def parse_curator_json(text: str) -> dict[str, str]:
     """The model is told to return strict JSON, but be defensive."""
     text = text.strip()
     # Strip a single leading/trailing code fence if present.
@@ -211,52 +222,90 @@ def parse_haiku_json(text: str) -> dict[str, str]:
         # Last-ditch: grab the first {...} block.
         m = re.search(r"\{.*\}", text, re.DOTALL)
         if not m:
-            raise RuntimeError(f"Haiku did not return JSON: {text[:300]!r}")
+            raise RuntimeError(f"Curator LLM did not return JSON: {text[:300]!r}")
         obj = json.loads(m.group(0))
     required = {"title", "medium", "artist_statement", "image_prompt"}
     missing = required - set(obj)
     if missing:
-        raise RuntimeError(f"Haiku JSON missing keys {missing}: {obj}")
+        raise RuntimeError(f"Curator JSON missing keys {missing}: {obj}")
     return {k: str(obj[k]).strip() for k in required}
 
 
-# ----------------------------- fal.ai flux ----------------------------------
+# ----------------------------- wavespeed ai --------------------------------
+
+
+def _wavespeed_headers() -> dict[str, str]:
+    api_key = os.environ.get("WAVESPEED_AI_API_KEY")
+    if not api_key:
+        raise RuntimeError("WAVESPEED_AI_API_KEY is not set")
+    return {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
+    }
+
+
+def _submit_wavespeed(prompt: str) -> str:
+    """POST the task and return the prediction id."""
+    url = f"{WAVESPEED_BASE}/{WAVESPEED_MODEL}"
+    body = {
+        "prompt": prompt,
+        "size": WAVESPEED_SIZE,
+        "seed": -1,
+        "enable_sync_mode": False,
+        "enable_base64_output": False,
+    }
+    r = requests.post(url, headers=_wavespeed_headers(), json=body, timeout=60)
+    if r.status_code >= 400:
+        raise RuntimeError(f"WaveSpeed submit error {r.status_code}: {r.text[:500]}")
+    data = r.json().get("data") or {}
+    pred_id = data.get("id")
+    if not pred_id:
+        raise RuntimeError(f"WaveSpeed submit returned no id: {r.text[:500]}")
+    return pred_id
+
+
+def _poll_wavespeed(pred_id: str, deadline_s: float = 240.0) -> list[str]:
+    """Poll until the prediction completes; return the list of output URLs."""
+    url = f"{WAVESPEED_BASE}/predictions/{pred_id}/result"
+    poll_url = f"{WAVESPEED_BASE}/predictions/{pred_id}"
+    start = time.monotonic()
+    backoff = 2.0
+    while True:
+        if time.monotonic() - start > deadline_s:
+            raise RuntimeError(f"WaveSpeed prediction {pred_id} timed out")
+        r = requests.get(poll_url, headers=_wavespeed_headers(), timeout=30)
+        if r.status_code >= 400:
+            raise RuntimeError(
+                f"WaveSpeed poll error {r.status_code}: {r.text[:500]}"
+            )
+        data = (r.json().get("data") or {})
+        status = data.get("status")
+        if status == "completed":
+            outputs = data.get("outputs") or []
+            if not outputs:
+                raise RuntimeError(
+                    f"WaveSpeed completed with no outputs: {r.text[:500]}"
+                )
+            return [u for u in outputs if isinstance(u, str)]
+        if status == "failed":
+            raise RuntimeError(
+                f"WaveSpeed prediction failed: {data.get('error') or r.text[:500]}"
+            )
+        time.sleep(min(backoff, 10.0))
+        backoff *= 1.5
+        # Defensive: keep the loop variable "url" referenced for linters.
+        _ = url
 
 
 def generate_image(prompt: str) -> bytes:
-    """Submit to fal.ai Flux via fal-client and return the image bytes."""
+    """Submit to WaveSpeed AI Flux and return the image bytes."""
     if os.environ.get("MUSEUM_DRY_RUN") == "1":
         # Tiny stub PNG so the rest of the pipeline can be tested offline.
         return _stub_png_bytes()
 
-    try:
-        import fal_client  # type: ignore
-    except ImportError as e:
-        raise RuntimeError(
-            "fal-client is not installed; run `pip install -r requirements.txt`"
-        ) from e
-
-    # fal_client.subscribe blocks until the request completes and returns the
-    # full result dict, which for Flux contains an `images` list with URLs.
-    result = fal_client.subscribe(
-        FAL_MODEL,
-        arguments={
-            "prompt": prompt,
-            "image_size": FAL_IMAGE_SIZE,
-            "num_images": 1,
-            "num_inference_steps": 28,
-            "guidance_scale": 3.5,
-            "enable_safety_checker": True,
-        },
-        with_logs=False,
-    )
-    images = result.get("images") or []
-    if not images:
-        raise RuntimeError(f"fal.ai returned no images: {result}")
-    url = images[0].get("url")
-    if not url:
-        raise RuntimeError(f"fal.ai image missing url: {images[0]}")
-    img_r = requests.get(url, timeout=120)
+    pred_id = _submit_wavespeed(prompt)
+    outputs = _poll_wavespeed(pred_id)
+    img_r = requests.get(outputs[0], timeout=120)
     img_r.raise_for_status()
     return img_r.content
 
@@ -308,8 +357,8 @@ def write_artifact(date: dt.date, event: dict[str, Any], curator: dict[str, str]
         "image_prompt": curator["image_prompt"],
         "image": "painting.jpg",
         "model": {
-            "curator": ANTHROPIC_MODEL,
-            "image": FAL_MODEL,
+            "curator": OPENROUTER_MODEL,
+            "image": WAVESPEED_MODEL,
         },
         "generated_at": dt.datetime.utcnow().isoformat(timespec="seconds") + "Z",
     }
@@ -370,7 +419,7 @@ def main() -> int:
     event = event_summary(raw_event)
     print(f"[museum] event: {event['year']} — {event['text'][:100]}…")
 
-    curator = call_haiku(event)
+    curator = call_curator(event)
     print(f"[museum] title: {curator['title']}")
     print(f"[museum] image prompt: {curator['image_prompt'][:100]}…")
 

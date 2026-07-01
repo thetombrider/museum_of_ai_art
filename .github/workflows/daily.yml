@@ -46,8 +46,8 @@ jobs:
 
       - name: Run curator
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          FAL_KEY: ${{ secrets.FAL_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          WAVESPEED_AI_API_KEY: ${{ secrets.WAVESPEED_AI_API_KEY }}
         run: python scripts/curator.py
 
       - name: Commit today's exhibit
