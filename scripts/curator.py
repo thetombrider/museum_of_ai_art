@@ -312,14 +312,18 @@ def _wavespeed_headers() -> dict[str, str]:
     }
 
 
-def _submit_wavespeed(prompt: str) -> str:
-    """POST the task and return the prediction id."""
+def _submit_wavespeed(prompt: str, sync: bool = True) -> dict:
+    """POST the task and return the parsed `data` dict from the response.
+
+    In sync mode the response includes the generated outputs inline; in async
+    mode the caller must poll `GET /predictions/{id}/result` until completion.
+    """
     url = f"{WAVESPEED_BASE}/{WAVESPEED_MODEL}"
     body = {
         "prompt": prompt,
         "size": WAVESPEED_SIZE,
         "seed": -1,
-        "enable_sync_mode": False,
+        "enable_sync_mode": bool(sync),
         "enable_base64_output": False,
     }
     r, _ = _post_with_retry(
@@ -328,14 +332,13 @@ def _submit_wavespeed(prompt: str) -> str:
     if r.status_code >= 400:
         raise RuntimeError(f"WaveSpeed submit error {r.status_code}: {r.text[:500]}")
     data = r.json().get("data") or {}
-    pred_id = data.get("id")
-    if not pred_id:
+    if not data.get("id"):
         raise RuntimeError(f"WaveSpeed submit returned no id: {r.text[:500]}")
-    return pred_id
+    return data
 
 
 def _poll_wavespeed(pred_id: str, deadline_s: float = 240.0) -> list[str]:
-    """Poll until the prediction completes; return the list of output URLs."""
+    """Poll the result endpoint until the prediction completes; return output URLs."""
     poll_url = f"{WAVESPEED_BASE}/predictions/{pred_id}/result"
     start = time.monotonic()
     backoff = 2.0
@@ -386,13 +389,23 @@ def _poll_wavespeed(pred_id: str, deadline_s: float = 240.0) -> list[str]:
 
 
 def generate_image(prompt: str) -> bytes:
-    """Submit to WaveSpeed AI Flux and return the image bytes."""
+    """Submit to WaveSpeed AI Flux and return the image bytes.
+
+    Tries synchronous mode first (the response includes the outputs inline, so
+    we don't need a poll loop). If the sync response doesn't include outputs
+    (e.g. the server returned before completion), falls back to async submit +
+    poll on the result endpoint.
+    """
     if os.environ.get("MUSEUM_DRY_RUN") == "1":
         # Tiny stub PNG so the rest of the pipeline can be tested offline.
         return _stub_png_bytes()
 
-    pred_id = _submit_wavespeed(prompt)
-    outputs = _poll_wavespeed(pred_id)
+    data = _submit_wavespeed(prompt, sync=True)
+    outputs = data.get("outputs") or []
+    if not outputs:
+        pred_id = data["id"]
+        print(f"[museum] sync mode returned no outputs; polling {pred_id}")
+        outputs = _poll_wavespeed(pred_id)
     img_r = requests.get(outputs[0], timeout=120)
     img_r.raise_for_status()
     return img_r.content
