@@ -16,7 +16,7 @@ Environment variables:
     MUSEUM_DATE          optional, override "today" as YYYY-MM-DD (for testing/backfill)
     MUSEUM_REPO_ROOT     optional, defaults to parent of this file's parent
     MUSEUM_DRY_RUN       if "1", skip WaveSpeed and write a stub painting instead
-    MUSEUM_OPENROUTER_MODEL  optional, override the curator LLM (default: a free OSS model)
+    MUSEUM_OPENROUTER_MODEL  optional, override the curator LLM (default: deepseek-v4-flash)
     MUSEUM_WAVESPEED_MODEL   optional, override the image model path
     MUSEUM_WAVESPEED_SIZE    optional, override the image size (default "1024*768")
 """
@@ -40,10 +40,10 @@ import requests
 
 WIKI_BASE = "https://en.wikipedia.org/api/rest_v1/feed/onthisday"
 
-# OpenRouter (curator LLM). Default is a free, open-weight model.
+# OpenRouter (curator LLM). Default is a cheap, open-weight DeepSeek model.
 OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 OPENROUTER_MODEL = os.environ.get(
-    "MUSEUM_OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"
+    "MUSEUM_OPENROUTER_MODEL", "deepseek/deepseek-v4-flash"
 )
 # Fallback chain: other free OSS models on OpenRouter, tried in order if the
 # primary model is rate-limited upstream. All entries are open-weight.

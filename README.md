@@ -89,7 +89,7 @@ incurring image-generation cost. Set `MUSEUM_OPENROUTER_MODEL` and
 | Component                | Cost per day                |
 |--------------------------|-----------------------------|
 | Wikipedia REST API       | Free                        |
-| OpenRouter OSS curator   | Free (default `:free` model) or ≈ $0.0001 |
+| OpenRouter curator LLM   | ≈ $0.0002 (default DeepSeek V4 Flash, ~700 tokens) |
 | WaveSpeed AI Flux 2 dev  | ≈ $0.012 per image          |
 | GitHub Actions minutes   | Free (well under 1 min/day) |
 | GitHub Pages bandwidth   | Free                        |
@@ -97,7 +97,8 @@ incurring image-generation cost. Set `MUSEUM_OPENROUTER_MODEL` and
 
 A month of operation is roughly the price of a sandwich. Most of that is
 image generation, and it has dropped ~4× since switching from fal.ai to
-WaveSpeed.
+WaveSpeed. Override the LLM with `MUSEUM_OPENROUTER_MODEL` (e.g. set it to
+one of the `:free` tier models for $0 text cost).
 
 ---
 
