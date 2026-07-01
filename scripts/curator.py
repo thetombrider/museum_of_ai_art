@@ -336,7 +336,7 @@ def _submit_wavespeed(prompt: str) -> str:
 
 def _poll_wavespeed(pred_id: str, deadline_s: float = 240.0) -> list[str]:
     """Poll until the prediction completes; return the list of output URLs."""
-    poll_url = f"{WAVESPEED_BASE}/predictions/{pred_id}"
+    poll_url = f"{WAVESPEED_BASE}/predictions/{pred_id}/result"
     start = time.monotonic()
     backoff = 2.0
     while True:
