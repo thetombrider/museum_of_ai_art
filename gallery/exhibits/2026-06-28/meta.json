@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-28",
+  "year": 1990,
+  "event": {
+    "text": "Paperback Software, a company founded by Adam Osborne, was found guilty of copyright infringement for using Lotus 1-2-3's look-and-feel interface in its own spreadsheet program.",
+    "page_title": "Paperback Software",
+    "page_extract": "Paperback Software International Ltd. was a software company founded in 1983 by Adam Osborne to manufacture discount software such as word processor Paperback Writer and related spell checker Paperback Speller, spreadsheet VP-Planner, database VP-Info, and the VP-Expert artificial intelligence software. VP-Planner was developed by James Stephenson of Stephenson Software Ltd. VP-Expert was developed by Brian Sawyer. The company was headquartered in Berkeley, California.",
+    "thumbnail_url": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Paperback_Software"
+  },
+  "title": "The Precedent of Form",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I remember the way a screen could feel like a room—one you had built yourself, one you had come to know. And then someone told you the walls were not yours, that the shape of the door was owned by another. The light that day was flat, like a fluorescent grid; everyone was staring at the same invisible geometry. I paint to remember that a language is not the same as a voice.",
+  "image_prompt": "A solitary figure sits at a wooden desk in a dimly lit office, late afternoon light falling through venetian blinds onto a green-tinted monitor. The screen glows with a grid of faint amber lines, a spreadsheet frozen mid-scroll. A single sheet of paper lies beside the keyboard, covered in handwritten annotations and crossed-out arrows. The room is cluttered with floppy disks and ring binders, but the focus is on the hands hovering over the keys, hesitating. The palette is muted: browns, olives, grey-blues, with the monitor's amber as the only warmth. Brushed canvas texture, soft edges, a stillness that suggests a judgment has just been delivered. No text on the screen is legible, only patterns of light.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-01T15:04:15Z"
+}
