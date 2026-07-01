@@ -45,6 +45,13 @@ OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
 OPENROUTER_MODEL = os.environ.get(
     "MUSEUM_OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free"
 )
+# Fallback chain: other free OSS models on OpenRouter, tried in order if the
+# primary model is rate-limited upstream. All entries are open-weight.
+OPENROUTER_FALLBACKS = [
+    "qwen/qwen3-next-80b-a3b-instruct:free",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "google/gemma-3-27b-it:free",
+]
 
 # WaveSpeed AI (image generation). Path is appended to /api/v3/.
 WAVESPEED_BASE = "https://api.wavespeed.ai/api/v3"
@@ -169,44 +176,105 @@ CURATOR_SYSTEM = textwrap.dedent(
 ).strip()
 
 
+def _openrouter_models() -> list[str]:
+    """Ordered list of models to try, starting with the user-configured one."""
+    primary = OPENROUTER_MODEL
+    chain = [primary] + [m for m in OPENROUTER_FALLBACKS if m != primary]
+    return chain
+
+
+def _post_with_retry(url: str, headers: dict, body: dict, max_attempts: int = 4):
+    """POST with exponential backoff on 429/5xx. Returns (response, attempts)."""
+    last_err = None
+    backoff = 2.0
+    for attempt in range(1, max_attempts + 1):
+        r = requests.post(url, headers=headers, json=body, timeout=180)
+        if r.status_code < 400:
+            return r, attempt
+        # 4xx other than 429 is non-retryable (bad request, auth, etc.).
+        if 400 <= r.status_code < 500 and r.status_code != 429:
+            return r, attempt
+        # 429 or 5xx -> retry, honouring Retry-After if present.
+        retry_after = r.headers.get("retry-after") or r.headers.get("Retry-After")
+        wait: float
+        if retry_after:
+            try:
+                wait = float(retry_after)
+            except ValueError:
+                wait = backoff
+        else:
+            wait = backoff
+        print(
+            f"[museum] {url.split('/')[-1] or 'request'} "
+            f"HTTP {r.status_code} (attempt {attempt}/{max_attempts}); "
+            f"sleeping {wait:.1f}s"
+        )
+        time.sleep(min(wait, 30.0))
+        backoff = min(backoff * 1.8, 20.0)
+        last_err = RuntimeError(f"HTTP {r.status_code}: {r.text[:300]}")
+    # Out of attempts.
+    assert last_err is not None
+    raise last_err
+
+
 def call_curator(event: dict[str, Any]) -> dict[str, str]:
     api_key = os.environ.get("OPENROUTER_API_KEY")
     if not api_key:
         raise RuntimeError("OPENROUTER_API_KEY is not set")
     user_payload = json.dumps(event, ensure_ascii=False, indent=2)
-    body = {
-        "model": OPENROUTER_MODEL,
-        "max_tokens": 1024,
-        "temperature": 0.8,
-        "response_format": {"type": "json_object"},
-        "messages": [
-            {"role": "system", "content": CURATOR_SYSTEM},
-            {
-                "role": "user",
-                "content": (
-                    "Today's historical event:\n\n" + user_payload + "\n\n"
-                    "Return JSON only."
-                ),
-            },
-        ],
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Content-Type": "application/json",
     }
-    r = requests.post(
-        OPENROUTER_URL,
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json",
-        },
-        json=body,
-        timeout=180,
+    last_err = None
+    for model in _openrouter_models():
+        body = {
+            "model": model,
+            "max_tokens": 1024,
+            "temperature": 0.8,
+            "response_format": {"type": "json_object"},
+            "messages": [
+                {"role": "system", "content": CURATOR_SYSTEM},
+                {
+                    "role": "user",
+                    "content": (
+                        "Today's historical event:\n\n" + user_payload + "\n\n"
+                        "Return JSON only."
+                    ),
+                },
+            ],
+        }
+        try:
+            r, _ = _post_with_retry(OPENROUTER_URL, headers, body)
+        except RuntimeError as e:
+            print(f"[museum] model {model} exhausted retries: {e}")
+            last_err = e
+            continue
+        if r.status_code >= 400:
+            # Non-retryable client error for this model -> try next.
+            print(
+                f"[museum] model {model} returned HTTP {r.status_code}; "
+                f"trying next. Body: {r.text[:200]}"
+            )
+            last_err = RuntimeError(
+                f"OpenRouter API error {r.status_code}: {r.text[:500]}"
+            )
+            continue
+        data = r.json()
+        try:
+            text = data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as e:
+            print(f"[museum] model {model} returned unexpected payload: {data}")
+            last_err = RuntimeError(
+                f"OpenRouter returned unexpected payload: {data}"
+            )
+            continue
+        if model != OPENROUTER_MODEL:
+            print(f"[museum] curator fallback succeeded with {model}")
+        return parse_curator_json(text)
+    raise RuntimeError(
+        f"All OpenRouter models failed; last error: {last_err}"
     )
-    if r.status_code >= 400:
-        raise RuntimeError(f"OpenRouter API error {r.status_code}: {r.text[:500]}")
-    data = r.json()
-    try:
-        text = data["choices"][0]["message"]["content"]
-    except (KeyError, IndexError, TypeError) as e:
-        raise RuntimeError(f"OpenRouter returned unexpected payload: {data}") from e
-    return parse_curator_json(text)
 
 
 def parse_curator_json(text: str) -> dict[str, str]:
@@ -254,7 +322,9 @@ def _submit_wavespeed(prompt: str) -> str:
         "enable_sync_mode": False,
         "enable_base64_output": False,
     }
-    r = requests.post(url, headers=_wavespeed_headers(), json=body, timeout=60)
+    r, _ = _post_with_retry(
+        url, _wavespeed_headers(), body, max_attempts=4
+    )
     if r.status_code >= 400:
         raise RuntimeError(f"WaveSpeed submit error {r.status_code}: {r.text[:500]}")
     data = r.json().get("data") or {}
@@ -266,7 +336,6 @@ def _submit_wavespeed(prompt: str) -> str:
 
 def _poll_wavespeed(pred_id: str, deadline_s: float = 240.0) -> list[str]:
     """Poll until the prediction completes; return the list of output URLs."""
-    url = f"{WAVESPEED_BASE}/predictions/{pred_id}/result"
     poll_url = f"{WAVESPEED_BASE}/predictions/{pred_id}"
     start = time.monotonic()
     backoff = 2.0
@@ -275,6 +344,27 @@ def _poll_wavespeed(pred_id: str, deadline_s: float = 240.0) -> list[str]:
             raise RuntimeError(f"WaveSpeed prediction {pred_id} timed out")
         r = requests.get(poll_url, headers=_wavespeed_headers(), timeout=30)
         if r.status_code >= 400:
+            # Transient upstream errors -> back off and retry within deadline.
+            if r.status_code == 429 or r.status_code >= 500:
+                if time.monotonic() - start > deadline_s:
+                    raise RuntimeError(
+                        f"WaveSpeed prediction {pred_id} timed out "
+                        f"with HTTP {r.status_code}"
+                    )
+                retry_after = r.headers.get("retry-after") or r.headers.get(
+                    "Retry-After"
+                )
+                try:
+                    wait = float(retry_after) if retry_after else backoff
+                except ValueError:
+                    wait = backoff
+                print(
+                    f"[museum] wavespeed poll HTTP {r.status_code}; "
+                    f"sleeping {wait:.1f}s"
+                )
+                time.sleep(min(wait, 15.0))
+                backoff = min(backoff * 1.8, 10.0)
+                continue
             raise RuntimeError(
                 f"WaveSpeed poll error {r.status_code}: {r.text[:500]}"
             )
@@ -293,8 +383,6 @@ def _poll_wavespeed(pred_id: str, deadline_s: float = 240.0) -> list[str]:
             )
         time.sleep(min(backoff, 10.0))
         backoff *= 1.5
-        # Defensive: keep the loop variable "url" referenced for linters.
-        _ = url
 
 
 def generate_image(prompt: str) -> bytes:
