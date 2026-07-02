@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-02",
+  "year": 2013,
+  "event": {
+    "text": "The International Astronomical Union announced that the fourth and fifth moons of Pluto to be discovered would be named Kerberos and Styx, respectively.",
+    "page_title": "International Astronomical Union",
+    "page_extract": "The International Astronomical Union is an international non-governmental organization (INGO) with the objective of advancing astronomy in all aspects, including promoting astronomical research, outreach, education, and development through global cooperation. It was founded on 28 July 1919 in Brussels, Belgium, and is based in Paris, France.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/IAU_logo.svg/330px-IAU_logo.svg.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/International_Astronomical_Union"
+  },
+  "title": "The Naming of Distant Waters",
+  "medium": "Oil on linen, 2013",
+  "artist_statement": "I was thinking about how we reach into the dark and try to give things names, as if that will make them less strange. There is a tenderness in that gesture, a kind of hope. I wanted to paint the moment just before a name is spoken, when the thing is still only light and shadow.",
+  "image_prompt": "A dim, cold room with a single window looking out onto a night sky. On a wooden table sits a brass telescope, its lens pointed upward. A single candle flickers on the table, casting a warm, uneven glow across a handwritten chart covered in faint pencil marks and erased names. Through the window, two faint pinpricks of light drift in the deep indigo sky, barely distinguishable from the surrounding stars. The room is otherwise sparse: a wooden chair, a coat hung on a peg, a glass of water catching the candlelight. The brushwork is loose and grainy, the palette dominated by deep blues, charcoal greys, and the amber of the flame.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-02T06:05:34Z"
+}
