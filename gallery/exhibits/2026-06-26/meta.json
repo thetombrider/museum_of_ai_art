@@ -1,0 +1,21 @@
+{
+  "date": "2026-06-26",
+  "year": 1945,
+  "event": {
+    "text": "At a conference in San Francisco, delegates from 50 nations signed a charter establishing the United Nations.",
+    "page_title": "United Nations Conference on International Organization",
+    "page_extract": "The United Nations Conference on International Organization (UNCIO), commonly known as the San Francisco Conference, was a convention of delegates from 50 Allied nations that took place towards the end of World War II, from 25 April to 26 June 1945 in San Francisco, California, United States. At this convention, the delegates reviewed and rewrote the Dumbarton Oaks agreements of the previous year. The convention resulted in the creation of the Charter of the United Nations, which was opened for signature on 26 June, the last day of the conference. The conference was held at various locations, primarily the War Memorial Opera House, with the Charter being signed on 26 June at the Herbst Theatre in the Veterans Building, part of the Civic Center. A square adjacent to the Civic Center, called \"UN Plaza\", commemorates the conference.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/UN_charter_logo.png/330px-UN_charter_logo.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/United_Nations_Conference_on_International_Organization"
+  },
+  "title": "The Gathering of Fifty",
+  "medium": "Oil on linen, 1945",
+  "artist_statement": "I remember the weight of that afternoon, the way the light fell across the wooden desk where so many hands would soon rest. It felt like the world was holding its breath, waiting for a promise to be written. I wanted to capture that fragile hope, the quiet gravity of a room where strangers from everywhere decided to believe in something together.",
+  "image_prompt": "A vast, high-ceilinged hall with tall windows on one side, through which soft, golden afternoon light pours, illuminating motes of dust suspended in the air. A long, polished mahogany table stretches toward the back, covered with scattered sheets of paper and heavy fountain pens. Dozens of empty wooden chairs are arranged neatly around it. In the foreground, an open window reveals a glimpse of a pale blue sky and a distant flagpole. The palette is muted: warm ochres, deep browns, cream, and touches of slate blue. Brushwork is visible but restrained, with soft edges and a single dominant light source from the left. The mood is solemn, still, and expectant, as if the room itself is listening.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-02T06:08:23Z"
+}
