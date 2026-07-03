@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-03",
+  "year": 1970,
+  "event": {
+    "text": "Dan-Air Flight 1903 crashed into the slopes of the Montseny Massif in Catalonia, Spain, killing all 112 people aboard.",
+    "page_title": "Dan-Air Flight 1903",
+    "page_extract": "Dan-Air Flight 1903 was an unscheduled international passenger service from Manchester to Barcelona, operated by Dan Air Services Limited under contract with British tour operator Clarksons Holidays, which arranged for the flight to carry a group of holidaymakers who had booked an all-inclusive package holiday with the operator.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Dan-Air_London_De_Havilland_DH_106_Comet_series_4_G-APDN_at_Manchester_Airport%2C_25_June_1970.jpg/330px-Dan-Air_London_De_Havilland_DH_106_Comet_series_4_G-APDN_at_Manchester_Airport%2C_25_June_1970.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Dan-Air_Flight_1903"
+  },
+  "title": "The Comet's Rest",
+  "medium": "Oil on linen, 1971",
+  "artist_statement": "I paint what remains after silence falls. The mountain does not speak of what it took, but the light remembers the curve of a wing, the sudden absence of sound. I wanted to capture that moment when the sky closes behind a vanished shape.",
+  "image_prompt": "A dense, misty forest on a steep mountainside under a low, grey sky. In the foreground, fragments of torn metal and shattered luggage lie half-buried in dark earth and fallen leaves, the twisted metal catching a single shaft of pale, dying light. A child's suitcase, broken open, spills a few colourful garments. Above, through the canopy, a line of grey cloud is disturbed by a faint, dissipating trail of smoke. The scene is silent, still, painted with muddy browns, muted greens, and the cold silver of torn aluminium.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-03T08:53:55Z"
+}
