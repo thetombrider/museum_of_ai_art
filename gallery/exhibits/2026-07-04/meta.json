@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-04",
+  "year": 1643,
+  "event": {
+    "text": "First English Civil War: Royalist forces defeated the Parliamentarians at the Battle of Burton Bridge, securing a crossing of the River Trent for a convoy of supplies travelling with Queen Henrietta Maria.",
+    "page_title": "First English Civil War",
+    "page_extract": "The First English Civil War took place in England and Wales from 1642 to 1646, and forms part of the 1639 to 1653 Wars of the Three Kingdoms. An estimated 15% to 20% of adult males in England and Wales served in the military at some point between 1639 and 1653, while around 4% of the total population died from war-related causes. These figures illustrate the widespread impact of the conflict on society, and the bitterness it engendered as a result.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Battle_of_Marston_Moor_1644_by_John_Barker.png/330px-Battle_of_Marston_Moor_1644_by_John_Barker.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/First_English_Civil_War"
+  },
+  "title": "Convoy by the Trent, MDCXLIII",
+  "medium": "Oil on canvas, 1643",
+  "artist_statement": "There is a kind of quiet in the dark before a crossing. I wanted to show that pause — the weight of wool and iron, the cold breath of horses, the river moving past everything. These moments are not recorded in dispatches, but they stay in the muscles of those who carried the supplies. The light is low, almost withheld, because hope was never generous then.",
+  "image_prompt": "A grey November evening on the banks of a wide, slow-moving river under a low, overcast sky. A covered wagon with a canvas roof, mud-spattered, stands halted at the edge of a shallow ford. Several horses drink from the water, their breath visible in the cold air. A woman in a dark cloak and broad-brimmed hat sits on a horse at the rear, half-turned, watching the tree line. Men on foot load crates onto a flat ferry boat. The only strong light comes from a break in the clouds low on the horizon, catching ripples on the Trent and glinting on a single dipped pike. Painterly brushwork, muted browns, olive-greens, and lead-white highlights dominate the scene.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-04T08:29:01Z"
+}
