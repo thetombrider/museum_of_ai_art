@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-07",
+  "year": 1777,
+  "event": {
+    "text": "American Revolutionary War: British forces caught up with American troops withdrawing from Ticonderoga, capturing more than 200 men at the Battle of Hubbardton.",
+    "page_title": "American Revolutionary War",
+    "page_extract": "The American Revolutionary War, also known as the Revolutionary War or American War of Independence or simply the American Revolution, was the armed conflict that comprised the final eight years of the broader American Revolution, in which American Patriot forces organized as the Continental Army and commanded by George Washington defeated the British Army. The conflict was fought in North America, the Caribbean, and the Atlantic Ocean. The war's outcome seemed uncertain for most of the war, but Washington and the Continental Army's decisive victory in the Siege of Yorktown in 1781 led King George III and the Kingdom of Great Britain to negotiate an end to the war. In 1783, in the Treaty of Paris, the British monarchy acknowledged the independence of the Thirteen Colonies, leading to the establishment of the United States as an independent and sovereign nation.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Surrender_of_Lord_Cornwallis.jpg/330px-Surrender_of_Lord_Cornwallis.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Revolutionary_War"
+  },
+  "title": "The Woodland Retreat",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I wanted to capture the moment when the forest itself seemed to hold its breath. The men moved through the trees not as soldiers but as shadows, each step a negotiation with the earth. There is a quiet dignity in retreat, a weight that settles on the shoulders like the damp air before rain. I painted the light filtering through the canopy as if it were the last kindness the day could offer.",
+  "image_prompt": "A dense, misty forest at dawn, with tall, dark pines and birch trees. A group of men in ragged 18th-century coats and tricorn hats move silently along a muddy path, their faces half-lit by a pale, low sun breaking through the clouds. The light catches the brass buttons of a coat and the barrel of a musket slung over a shoulder. Fallen leaves and damp earth underfoot. The palette is muted: olive, ochre, slate blue, and a faint, watery gold. The brushwork is loose and expressive, with thick impasto on the tree trunks and a soft, atmospheric haze in the distance. A single ray of sunlight illuminates a discarded canteen on the ground, its metal surface catching the light.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-07T09:30:30Z"
+}
