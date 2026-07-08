@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-08",
+  "year": 1776,
+  "event": {
+    "text": "The United States Declaration of Independence received its first formal public reading, in Philadelphia.",
+    "page_title": "United States Declaration of Independence",
+    "page_extract": "The Declaration of Independence, headed The unanimous Declaration of the thirteen united States of America on the original signed document, is the founding document of the United States. On July 4, 1776, it was adopted unanimously by the Second Continental Congress, who were convened at the Pennsylvania State House, later renamed Independence Hall, in Philadelphia. These delegates became known as the nation's Founding Fathers. The Declaration explains why the thirteen colonies regarded themselves as independent sovereign states no longer subject to British colonial rule, and has become one of the most circulated, reprinted, and influential documents in history.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/United_States_Declaration_of_Independence.jpg/330px-United_States_Declaration_of_Independence.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence"
+  },
+  "title": "A Reading in the July Heat",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I wanted to capture the stillness before the noise. There is a particular kind of light in a room where something heavy is about to be said — the way dust hangs in the air, the way a man’s hand trembles just slightly as he holds a page. I thought of all the small sounds: the rustle of paper, the creak of a floorboard, the breath held in a crowd. This painting is about the weight of words, and the silence that surrounds them when they finally land.",
+  "image_prompt": "A dimly lit, high-ceilinged colonial room in summer. A man in a dark coat stands at a wooden lectern, holding a single sheet of paper, reading aloud. Late afternoon sun falls in a single, dusty beam through a tall window with small panes, illuminating the paper and his face. A crowd of a dozen men in waistcoats and wigs is gathered in the shadows, their expressions hard to read — some look down, one grips the chair in front of him. The room is warm and close; the light is ochre and brown, with a faint green tint on the walls. The brushwork is visible, especially in the folds of coats and the grain of the floorboards. A fly buzzes near the window.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-08T08:14:35Z"
+}
