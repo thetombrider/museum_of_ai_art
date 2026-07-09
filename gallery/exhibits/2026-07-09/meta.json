@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-09",
+  "year": 551,
+  "event": {
+    "text": "An estimated 30,000 people died when a massive earthquake struck the Roman province of Phoenice.",
+    "page_title": "551 Beirut earthquake",
+    "page_extract": "An earthquake occurred in Byzantine Phoenicia on 9 July 551 with an estimated magnitude of about 7.5 on the moment magnitude scale and a maximum felt intensity of X (Extreme) on the Mercalli intensity scale. It triggered a devastating tsunami which affected the province's coastal towns, causing great destruction and sinking many ships. Overall large numbers of people were reported killed, with one estimate of 30,000 by the anonymous pilgrim of Piacenza for Berytus alone.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Lebanon_tectonics.png/330px-Lebanon_tectonics.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/551_Beirut_earthquake"
+  },
+  "title": "The Seventh Hour, DLV",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I wanted to paint the moment just after the wave recedes, when the air is still thick with salt and dust. The silence that follows such violence is not empty—it is filled with the weight of what was lost. I think of the ships that never returned to harbor, and the light that fell on the water that day, indifferent and golden.",
+  "image_prompt": "A wide view of a ruined coastal city at dusk, with shattered columns and collapsed stone walls half-submerged in murky, debris-littered water. The sky is a bruised purple and ochre, with a single shaft of low, golden sunlight breaking through heavy clouds, illuminating the twisted remains of a wooden ship lying on its side in the shallows. In the foreground, a broken marble statue of a woman lies face-down in the mud, her outstretched hand just touching the water's edge. The brushwork is thick and expressive, with deep shadows pooling in the crevices of the rubble, and the light catching the wet surfaces of stone and wood. The palette is dominated by earth tones, slate grey, and a pale, watery gold.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-09T09:27:21Z"
+}
