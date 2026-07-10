@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-10",
+  "year": 1978,
+  "event": {
+    "text": "Moktar Ould Daddah, the first president of Mauritania, was ousted in a coup d'état led by Mustafa Ould Salek.",
+    "page_title": "Moktar Ould Daddah",
+    "page_extract": "Moktar Ould Daddah was a Mauritanian politician who served as the country's first President after it gained its independence from France. Moktar served as the country's first Prime Minister from 1957 to 1961 and as its first President of Mauritania, a position he held for 18 years until he was deposed in a military coup d'etat in 1978.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Moktar_Ould_Daddah.jpg/330px-Moktar_Ould_Daddah.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Moktar_Ould_Daddah"
+  },
+  "title": "The Fall of the First",
+  "medium": "Oil on canvas, 1978",
+  "artist_statement": "I wanted to capture the stillness that follows a sudden change of power. The air in the room feels heavy, as if the walls themselves are holding their breath. There is a quiet dignity in the abandoned chair, a sense that something important has just slipped away, leaving only the dust and the light.",
+  "image_prompt": "A dimly lit, spacious room with high ceilings and a single, ornate wooden chair placed at the center, slightly askew. A shaft of late afternoon sunlight falls through a tall, narrow window, illuminating dust motes floating in the still air. The chair is empty, its velvet upholstery worn and faded. On a nearby table, a half-empty glass of water and a stack of papers with Arabic script catch the light. The walls are painted a muted ochre, and a faint shadow of a man is cast on the far wall, as if he has just left. The brushwork is loose and expressive, with thick impasto in the highlights and thin glazes in the shadows, evoking a sense of quiet aftermath and the weight of absence.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-10T09:24:02Z"
+}
