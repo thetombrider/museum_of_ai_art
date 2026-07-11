@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-11",
+  "year": 2011,
+  "event": {
+    "text": "An explosion at the Evangelos Florakis Naval Base killed 13 people, including the head of the Cyprus Navy.",
+    "page_title": "Evangelos Florakis Naval Base explosion",
+    "page_extract": "On 11 July 2011, at Evangelos Florakis Naval Base, situated at Mari, Larnaca District in Cyprus, a large amount of ammunition and military explosives self-detonated, killing 13 people, including the Commander of the Cyprus Navy, Andreas Ioannides, the base commander, Lambros Lambrou, and six firefighters. A further 62 people were injured. So intense was the explosion that debris was blown as far as 3km from the base. The explosion was the worst peacetime military accident ever recorded in Cyprus, with a yield of approximately 481 tons TNT equivalent, as determined by the official investigation into the accident. It was the largest artificial non-nuclear explosion of the 21st century until the 2020 Beirut explosions.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Vasilikos_explosion_crater1.jpg/330px-Vasilikos_explosion_crater1.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Evangelos_Florakis_Naval_Base_explosion"
+  },
+  "title": "The Quiet Before the Rupture",
+  "medium": "Oil on linen, 2011",
+  "artist_statement": "I remember the stillness of that morning, the way the light fell across the empty parade ground. Then the air itself seemed to tear. I wanted to paint not the blast, but the silence that preceded it—the ordinary things that would never be ordinary again. The dust that settled afterward carried the weight of what was lost.",
+  "image_prompt": "A low, ochre sun casts long shadows across a dusty parade ground at the edge of a Mediterranean naval base. In the foreground, a single olive tree, its leaves silvered by heat, stands beside a rusted water barrel. Beyond, a row of whitewashed buildings with blue trim, their windows dark. The air is thick with a pale, chalky haze that softens the edges of everything. A lone fire hose lies coiled on the cracked earth, its brass nozzle catching the last light. The sky is a flat, bruised lavender, and the sea in the distance is a sheet of hammered pewter. The brushwork is loose and dry, with the texture of the canvas showing through in the highlights.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-11T07:44:57Z"
+}
