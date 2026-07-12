@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-12",
+  "year": 1943,
+  "event": {
+    "text": "World War II: German and Soviet forces engaged each other at the Battle of Prokhorovka (tanks pictured), one of the largest tank battles in military history.",
+    "page_title": "World War II",
+    "page_extract": "World War II, or the Second World War, was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries participated. World War II was the deadliest conflict in history, causing the death of 60 to 75 million people. Millions died as a result of massacres, starvation, disease, and genocides, including the Holocaust. After the Allied victory, Germany, Austria, Japan, and Korea were occupied, and German and Japanese leaders were tried for war crimes.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg/330px-Bundesarchiv_Bild_101I-646-5188-17%2C_Flugzeuge_Junkers_Ju_87.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_War_II"
+  },
+  "title": "The Heavy Ground",
+  "medium": "Oil on linen, 2025",
+  "artist_statement": "I wanted to paint the moment after the noise has died — when the only sound is the wind moving through torn metal. The earth here remembers weight, and I tried to let the paint carry that memory. These fields were never just fields; they became a kind of ledger.",
+  "image_prompt": "A vast, flat field under a low, ochre sky. Dozens of twisted tank hulls lie scattered across the earth, their rusting steel catching the last light of a dying sun. A single figure in a long coat walks slowly between the wreckage, head bowed. In the foreground, a cluster of wild sunflowers grows from a patch of cracked soil, their heads turned toward the fading glow. The air is thick with dust and the distant haze of smoke. The palette is muted: burnt sienna, olive green, lead white, and a deep, bruised purple along the horizon. The brushwork is heavy and deliberate, with thick impasto on the tank carcasses and soft, dry strokes in the sky.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-12T08:05:53Z"
+}
