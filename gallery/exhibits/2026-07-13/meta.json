@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-13",
+  "year": 1831,
+  "event": {
+    "text": "Wallachian officials adopted the Regulamentul Organic, which engendered a period of reforms that provided for the westernization of the local society.",
+    "page_title": "Wallachia",
+    "page_extract": "Wallachia is a geographical region of modern-day Romania, as well as one of the two historical Romanian principalities that laid the foundation for the establishment of the modern Romanian state. It is situated north of the Lower Danube and south of the Southern Carpathians. Wallachia was traditionally divided into two sections, Muntenia and Oltenia. Dobruja could sometimes be considered a third section due to its proximity and brief rule over it. Wallachia as a whole is sometimes referred to as Muntenia through identification with the larger of the two traditional sections.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Flag_of_Wallachia.svg/330px-Flag_of_Wallachia.svg.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Wallachia"
+  },
+  "title": "The New Statutes",
+  "medium": "Oil on linen, 1831",
+  "artist_statement": "I wanted to paint the moment when a culture holds its breath. The old seal still warm from use, the new book open to a page not yet written in the local tongue. There is a quiet resignation in the air, a sense that something essential is being traded for something unknown.",
+  "image_prompt": "A dimly lit interior of a stone-walled room. A heavy oak table occupies the center, cluttered with a brass inkwell, a quill, and an open book with ornate foreign script. A man in traditional Wallachian attire—a long fur-lined coat and a tall cap—stands with his back to a tall, narrow window, casting a long shadow across the floor. The pale winter light streams through the window, illuminating the book and a scatter of dried leaves on the table. Dust motes hang in the cold air. On the wall behind him, a faded map of the region, its borders drawn in sepia ink. The palette is dominated by ochre, gray, and muted gold, with a single warm highlight on the brass seal lying beside the book.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-13T08:56:19Z"
+}
