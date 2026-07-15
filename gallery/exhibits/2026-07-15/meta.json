@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-15",
+  "year": 2016,
+  "event": {
+    "text": "The Peace at Home Council, a faction of the Turkish Armed Forces, staged a coup d'état attempt against the government and President Recep Tayyip Erdoğan.",
+    "page_title": "Peace at Home Council",
+    "page_extract": "The Council for Peace at Home, alternatively called the Peace Council, claimed to be an executive body that led a coup attempt in Turkey starting on 15 July 2016 and ended on July 16, 2016. The name was made public in a statement read on air during the July 15, 2016 temporary takeover by soldiers of the headquarters of Turkish state broadcaster TRT. The group was supposedly formed within the Turkish Armed Forces clandestinely. It was declared to be the governing council of Turkey during the coup attempt. The existence of council was firstly announced by Tijen Karaş, a news anchor at the state-owned TRT news channel, allegedly at gunpoint.",
+    "thumbnail_url": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peace_at_Home_Council"
+  },
+  "title": "The Midnight Broadcast",
+  "medium": "Oil on canvas, 2016",
+  "artist_statement": "I was awake that night, listening to the rain against the window. The television flickered in the corner of the studio, and I saw a face I did not recognize reading words that did not belong to her. The light from the screen was cold and blue, and I felt the weight of a thousand silent rooms. This painting is about the moment when a familiar voice becomes a stranger's, and the home you thought you knew becomes a stage for something vast and unspoken.",
+  "image_prompt": "A dimly lit television studio interior at night, the only light coming from a large studio monitor glowing pale blue. A woman in a dark suit stands in front of a microphone, her face half-shadowed, her hand resting on a stack of papers. Behind her, a clock on the wall reads 2:17 AM. The camera cables trail across the floor like dark vines. The image is painterly, with thick brushstrokes in muted grays, deep blues, and touches of stark white. The atmosphere is tense and quiet, the air thick with the silence between words.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-15T07:55:29Z"
+}
