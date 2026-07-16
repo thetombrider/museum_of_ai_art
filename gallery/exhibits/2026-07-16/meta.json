@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-16",
+  "year": 1950,
+  "event": {
+    "text": "Korean War: A Korean People's Army unit massacred 31 prisoners of war of the U.S. Army on a mountain near the village of Tuman.",
+    "page_title": "Korean War",
+    "page_extract": "The Korean War was an armed conflict fought on the Korean Peninsula between North Korea and South Korea and their allies. North Korea was supported by China and the Soviet Union, while South Korea was supported by the United Nations led by the United States under the auspices of the United Nations Command (UNC).",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Chosin.jpg/330px-Chosin.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Korean_War"
+  },
+  "title": "The Mountain at Tuman",
+  "medium": "Oil on linen, 1950",
+  "artist_statement": "I wanted to hold the stillness that comes after a terrible noise. The mountain does not speak of what it has seen, but the light falls on the rocks in a way that makes me think of the last moment before an ending. This is a landscape of quiet, where the wind carries nothing but the memory of breath.",
+  "image_prompt": "A steep, rocky mountainside under a low, gray sky. The slope is covered with sparse, wind-bent pines and patches of frost. In the foreground, a scattering of dark, irregular stones and a single, discarded boot, half-buried in the soil. The light is cold and uniform, as if filtered through a thin layer of cloud. The brushwork is broad and expressive, with muted earth tones of ochre, umber, and slate blue. The composition is anchored by a large, shadowed boulder on the left, while the right side opens to a distant, hazy valley. There is no sign of people, only the aftermath of something unspoken.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-16T08:01:03Z"
+}
