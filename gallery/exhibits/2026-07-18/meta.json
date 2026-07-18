@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-18",
+  "year": 1841,
+  "event": {
+    "text": "Pedro II, the last emperor of Brazil, was crowned at the Old Cathedral of Rio de Janeiro.",
+    "page_title": "Pedro II of Brazil",
+    "page_extract": "Dom Pedro II, known as \"the Magnanimous\", was the second and final emperor of the Empire of Brazil. He reigned from 1831 until his deposition in the military coup of 1889, presiding over the longest and most stable reign in Brazilian history.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Pedro_II_of_Brazil_-_Brady-Handy.jpg/330px-Pedro_II_of_Brazil_-_Brady-Handy.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Pedro_II_of_Brazil"
+  },
+  "title": "The Gilded Burden",
+  "medium": "Oil on canvas, 1841",
+  "artist_statement": "I am drawn to the moment when a child is handed a kingdom—the weight of a crown that will never be light. The ceremony is a gilded cage, the boy's face a mask of solemnity while the world looks on. I paint the hush of the cathedral, the gold thread catching the light, and the immense solitude of that single throne.",
+  "image_prompt": "Inside a dimly lit Baroque cathedral, a single shaft of dusty sunlight falls from a high clerestory window, illuminating a young emperor in an ornate gold-embroidered cloak and white lace collar. He kneels before the altar, head bowed, as a bishop's hands hover with a heavy jeweled crown. The air is thick with incense smoke, catching the light in soft blue-gray curls. The boy's face is pale, eyes downcast, lips pressed tight. Rich reds and deep blues dominate the shadows of the pillars, while the gold of the crown and vestments glows against the darkness. The painting has a heavy, impasto brushwork, especially in the folds of the fabric and the glint of the jewels, evoking the weight of history and the loneliness of the moment.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-18T07:38:57Z"
+}
