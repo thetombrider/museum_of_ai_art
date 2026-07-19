@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-19",
+  "year": 1702,
+  "event": {
+    "text": "Great Northern War: Polish–Saxon forces were defeated by a Swedish army half their size at the Battle of Kliszów.",
+    "page_title": "Great Northern War",
+    "page_extract": "In the Great Northern War (1700–1721) a coalition led by Russia successfully contested the supremacy of Sweden in Northern, Central and Eastern Europe. The initial leaders of the anti-Swedish alliance were Peter I of Russia, Frederick IV of Denmark–Norway and Augustus II the Strong of Saxony-Poland-Lithuania. Frederick IV and Augustus II were defeated by Sweden, under Charles XII, and forced out of the alliance in 1700 and 1706, respectively, but rejoined it in 1709 after the defeat of Charles XII at the Battle of Poltava. George I of Great Britain and the Electorate of Hanover joined the coalition in 1714 for Hanover and in 1717 for Britain, and Frederick William I of Brandenburg-Prussia joined it in 1715.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Great_Northern_War_Collage.jpg/330px-Great_Northern_War_Collage.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Great_Northern_War"
+  },
+  "title": "The Weight of Odds, MDCCII",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I find myself drawn to the quiet moments before the storm, where the air holds a tension that feels both crushing and sacred. This scene is not about the clash itself, but about the terrible mathematics of hope and despair. I wanted to capture that specific stillness, the way a field can hold the weight of so many unseen futures, and the loneliness of knowing the numbers are against you. It is a meditation on courage in the face of inevitable loss.",
+  "image_prompt": "A vast, snow-dusted plain under a low, grey winter sky. The light is flat and cold, with a single, weak sun breaking through a bank of clouds near the horizon, casting long, faint shadows from a sparse line of leafless birch trees. In the middle distance, a small, ragged formation of men in dark wool coats and tricorn hats stands in a defensive line, their muskets angled upwards. Their breath forms faint clouds in the still air. The ground is churned mud and patches of dirty snow, littered with a discarded drum and a snapped flagpole. The brushwork is broad and heavy, with thick, crusted impasto for the snow and sky, and a limited palette of muted ochre, slate grey, and bone white. The composition is off-center, placing the soldiers on the left side of the canvas, leaving the right side as an expanse of empty, forbidding plain.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-19T08:04:59Z"
+}
