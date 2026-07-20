@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-20",
+  "year": 1982,
+  "event": {
+    "text": "Members of the Provisional Irish Republican Army detonated two bombs in Hyde Park and Regent's Park in London, killing eleven British Army personnel and seven horses.",
+    "page_title": "Provisional Irish Republican Army",
+    "page_extract": "The Provisional Irish Republican Army, officially known as the Irish Republican Army and informally known as the Provos, was an Irish republican paramilitary force that sought to end British rule in Northern Ireland, facilitate Irish reunification and bring about an independent socialist republic, which would encompass all of Ireland. It was the most active republican paramilitary group during the Troubles. It argued that the all-island Irish Republic continued to exist, and it saw itself as that state's army, the sole legitimate successor to the original IRA from the Irish War of Independence. It was designated a terrorist organisation in the United Kingdom and an unlawful organisation in the Republic of Ireland, both of whose authority it rejected.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Provisional_Irish_Republican_Army_Badge.svg/330px-Provisional_Irish_Republican_Army_Badge.svg.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Provisional_Irish_Republican_Army"
+  },
+  "title": "A Summer Morning, Unbroken",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I remember the silence after the noise. The light that morning was impossibly gentle, falling on empty benches and scattered flowers. A horse's bridle lay in the grass, still warm. I paint the moment before the world learns to name what happened, when it is only a strange stillness, a held breath.",
+  "image_prompt": "A wide, quiet view of a manicured London park at dawn, the grass still wet with dew. Sunlight filters through the leaves of a large plane tree, casting dappled shadows. In the foreground, a single cavalry horse's brass bridle lies abandoned on a path, its leather strap frayed. A few feet away, a discarded military cap rests upside down. The background shows an empty wrought-iron bench and the distant, hazy outline of a white stone arch. The palette is muted: moss greens, pearl grays, and the warm ochre of the dirt path. The brushwork is soft and dry, with a single strong shaft of sunlight illuminating the bridle's metal buckle.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-20T08:46:33Z"
+}
