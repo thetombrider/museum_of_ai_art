@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-24",
+  "year": 1967,
+  "event": {
+    "text": "During a speech in Montreal, French president Charles de Gaulle (pictured) declared \"Long live free Quebec!\", a statement that was interpreted as support for Quebec independence from Canada.",
+    "page_title": "Montreal",
+    "page_extract": "Montreal is the largest city in the province of Quebec, the second-largest in Canada, and the eighth-largest in North America. Founded in 1642 as Ville-Marie, or \"City of Mary\", it now takes its name from Mount Royal, the triple-peaked mountain around which the early settlement was built. The city is centred on the Island of Montreal and a few, much smaller, peripheral islands, the largest of which is Île Bizard. It lies 196 kilometres (122 mi) east of the national capital, Ottawa, and 258 kilometres (160 mi) southwest of the provincial capital, Quebec City.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Montreal%2C_Quebec_skyline.jpg/330px-Montreal%2C_Quebec_skyline.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Montreal"
+  },
+  "title": "The Balcony and the Cry (MCMLXVII)",
+  "medium": "Oil on canvas, 1967",
+  "artist_statement": "I was thinking about the weight of a single voice against a cold wind, about how a city can feel like a held breath. The light that afternoon was that particular northern grey that makes every edge seem sharp and every color a little more urgent. I wanted to paint the moment after a declaration, when the air itself is charged and the ordinary becomes monumental.",
+  "image_prompt": "A grey, overcast afternoon over a broad European-style plaza in a North American city. A lone figure stands on a high balcony, arm raised in a broad gesture, his silhouette dark against a pale stone façade. Below, a sparse crowd of indistinct figures pauses, looking up, their coats flapping in a stiff breeze. The sky is a wash of muted silver and pearl, with a single break of pale yellow light illuminating the summit of a distant triple-peaked mountain. The brushwork is loose and painterly, with thick impasto on the balcony railings and the folds of the figure's coat. A single maple leaf, bright red, lies on the wet cobblestones in the foreground, catching the only warm light in the scene.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-24T08:13:28Z"
+}
