@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-25",
+  "year": 1898,
+  "event": {
+    "text": "Spanish–American War: After more than two months of sea-based bombardment, the United States invaded Puerto Rico.",
+    "page_title": "Spanish–American War",
+    "page_extract": "The Spanish–American War was fought between Spain and the United States in 1898. It began with the sinking of the USS Maine in Havana Harbor in Cuba, and resulted in the U.S. acquiring sovereignty over Puerto Rico, Guam, and the Philippines, and establishing a protectorate over Cuba. It represented U.S. intervention in the Cuban War of Independence and Philippine Revolution, with the latter later leading to the Philippine–American War. The Spanish–American War brought an end to almost four centuries of Spanish presence in the Americas, Asia, and the Pacific; the United States meanwhile not only became a major world power, but also gained several island possessions spanning the globe, which provoked rancorous debate over the wisdom of expansionism.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Collage_infobox_for_Spanish-American_War.jpg/330px-Collage_infobox_for_Spanish-American_War.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Spanish%E2%80%93American_War"
+  },
+  "title": "The Landing at Guánica Bay",
+  "medium": "Oil on canvas, 1898",
+  "artist_statement": "I wanted to capture the weight of that first step onto a shore that had never known our flag. The air was thick with salt and gunpowder, and the palms seemed to bow under the heavy light. There is a quiet before the noise of history, and I tried to hold it.",
+  "image_prompt": "A long, low beach at dusk, with dark green palm fronds silhouetted against a pale gold sky. In the middle distance, a single wooden rowboat is being dragged onto the sand by four men in dark wool uniforms, their faces hidden in shadow. The water is a deep, bruised blue, and the hull of a larger ship is just visible on the horizon, its black outline sharp against the fading light. The sand is damp and pockmarked with footprints. There is no wind, only a heavy stillness.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-25T07:55:11Z"
+}
