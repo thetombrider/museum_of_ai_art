@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-26",
+  "year": 2007,
+  "event": {
+    "text": "After widespread controversy throughout Wales, Shambo, a black Friesian bull that had been adopted by the local Hindu community, was slaughtered due to concerns about bovine tuberculosis.",
+    "page_title": "Shambo",
+    "page_extract": "Shambo was a black Friesian bull living in the interfaith Skanda Vale Temple near Llanpumsaint in Wales who had been adopted by the local Hindu community as a sacred animal. He came to public attention in April 2007, when a routine skin test for bovine tuberculosis tested positive, indicating he may have been in contact with the bacterium that causes the disease. As a result, the Welsh Government required that the bull be slaughtered. Skanda Vale disputed this and campaigned for a reprieve, expressing their belief that the sanctity of all life is the cornerstone of Hinduism. They were backed in this stance by the Hindu religious community at large. Farmers supported the Welsh Government's policy that cattle which tested positive to the skin test are culled in the interests of other local cattle.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/en/thumb/8/86/Shambo_%28bull%29.jpg/330px-Shambo_%28bull%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Shambo"
+  },
+  "title": "The Silence After the Last Bell",
+  "medium": "Oil on canvas, 2007",
+  "artist_statement": "I paint what remains when the argument is over. The light in that temple yard was heavy, the kind that clings to wet grass and animal breath. I wanted to hold the moment before the door closed—not the conflict, but the quiet dignity of a creature who trusted us. There is a grief in these forms that has no name.",
+  "image_prompt": "A dark stone temple courtyard in the Welsh countryside at dawn, mist rising from wet grass. A black bull stands alone near a low wall, its hide glossy with damp, breath visible in the cold air. A single oil lamp on a stone ledge casts a warm orange glow across its face and horns, leaving the rest in deep shadow. Beyond the courtyard, bare trees and rolling hills fade into a gray sky. The brushwork is loose and painterly, thick impasto on the bull's shoulder, thin glazes in the mist. The composition is quiet, centered, with a sense of impending departure.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-26T08:14:37Z"
+}
