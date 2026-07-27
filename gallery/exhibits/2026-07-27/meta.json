@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-27",
+  "year": 1054,
+  "event": {
+    "text": "During his invasion of Scotland, Siward, Earl of Northumbria, defeated Macbeth, King of Scotland, in an engagement north of the Firth of Forth.",
+    "page_title": "Siward, Earl of Northumbria",
+    "page_extract": "Siward or Sigurd was an important earl of 11th-century northern England. The Old Norse nickname Digri and its Latin translation Grossus are given to him by near-contemporary texts. He emerged as a regional strongman in England during the reign of Cnut. Cnut was a Scandinavian ruler who conquered most of England in the 1010s, and Siward was one of many Scandinavians who came to England in the aftermath, rising to become sub-ruler of most of northern England. From 1033 at the latest, he was in control of southern Northumbria, present-day Yorkshire, governing as earl on Cnut's behalf.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Siward%2C_Earl_of_Northumbria_%28British_Library_Cotton_MS_Tiberius_B_I%2C_folio_161v%29.jpg/330px-Siward%2C_Earl_of_Northumbria_%28British_Library_Cotton_MS_Tiberius_B_I%2C_folio_161v%29.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Siward%2C_Earl_of_Northumbria"
+  },
+  "title": "The Crossing at Forth MCMXLIV",
+  "medium": "Oil on canvas, 1054",
+  "artist_statement": "I thought of the cold. The way a northern wind can carry a man's last breath before he even knows it's gone. There is a stillness in that moment before, when the earth holds its own secrets and the water is too dark to see what lies beneath. I painted the light as it falls on the wet ground, because that is all we ever really have.",
+  "image_prompt": "A grey, overcast morning on a wide, muddy estuary. The water is a dull, pewter grey, reflecting the low, diffused light. On the near bank, a dense mass of figures on horseback, their mail and spear points catching a faint, cold gleam. A single, tall figure in a dark cloak sits apart, his face shadowed by a helm, looking across the water. The opposite bank is a low, dark line of earth and scrub, barely visible in the mist. The ground is churned mud, littered with broken reeds and wet stones. The brushwork is heavy and deliberate, with thick impasto on the highlights of the armor and the ripples in the water. The palette is restricted to umbers, ochres, slate greys, and a pale, sickly green in the sky.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-27T09:37:47Z"
+}
