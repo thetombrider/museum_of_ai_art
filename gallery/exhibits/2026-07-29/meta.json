@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-29",
+  "year": 1818,
+  "event": {
+    "text": "French physicist Augustin-Jean Fresnel submitted a memoir on the diffraction of light to the Royal Academy of Sciences, providing strong support for the wave theory of light.",
+    "page_title": "Augustin-Jean Fresnel",
+    "page_extract": "Augustin-Jean Fresnel was a French civil engineer and physicist whose research in optics led to the almost unanimous acceptance of the wave theory of light, fully supplanting Newton's corpuscular theory, from the late 1830s  until the end of the 19th century. He is perhaps better known for inventing the catadioptric (reflective/refractive) Fresnel lens and for pioneering the use of \"stepped\" lenses to extend the visibility of lighthouses, saving countless lives at sea. The simpler dioptric stepped lens, first proposed by Count Buffon  and independently reinvented by Fresnel, is used in screen magnifiers and in condenser lenses for overhead projectors.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Augustin_Fresnel.jpg/330px-Augustin_Fresnel.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Augustin-Jean_Fresnel"
+  },
+  "title": "The Diffraction of Light",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I was thinking of light not as a stream of particles but as a wave, a gentle undulation that bends around obstacles and spreads through small openings. In the studio, I watched morning light filter through a crack in the shutter, casting soft, overlapping fringes on the wall. It felt like the universe was whispering something about how we see—not with certainty, but with pattern and interference.",
+  "image_prompt": "A dim, scholarly room lit by a single ray of sunlight entering through a narrow gap in heavy wooden shutters. The beam falls on a polished mahogany table, where a sheet of paper shows faint, rainbow-edged shadows. A brass inkwell and a quill cast long, soft silhouettes. Dust motes hang in the light, glowing like tiny stars. The scene is rendered with thick, painterly brushstrokes in muted browns, ochres, and cool grays. The light is warm and golden, dominating the composition, while the edges of shadows blur into delicate, almost imperceptible fringes.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-29T08:27:45Z"
+}
