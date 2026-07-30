@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-30",
+  "year": 1865,
+  "event": {
+    "text": "Off the coast of Crescent City, California, the steamer Brother Jonathan struck an uncharted rock and sank, killing 225 people; its cargo of gold coins was not retrieved until 1996.",
+    "page_title": "Crescent City, California",
+    "page_extract": "Crescent City is the only incorporated city in Del Norte County, California, United States, of which it is also the county seat. The city is on the North Coast of California and had a total population of 6,673 in the 2020 census, down from 7,643 in the 2010 census.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Crescent_City%2C_CA.jpg/330px-Crescent_City%2C_CA.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Crescent_City%2C_California"
+  },
+  "title": "The Uncharted Rock, MDCCCLXV",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I stood on the shore and watched the fog swallow the horizon. There is a weight in the air when the sea takes what it wants. I wanted to paint that moment before the cry, when the hull touches the thing that was never on any map—the sudden silence of a ship that knows it will not reach the harbor. The gold coins are still down there, but they are not treasure anymore; they are the heaviest stones, holding the dead in their beds.",
+  "image_prompt": "A dark, choppy sea under a low, pewter-colored sky, with a dense fog bank rolling in from the right. In the middle distance, the tilted stern of a wooden steamer, listing heavily to port, its single smokestack emitting a thin, dark plume that is instantly absorbed into the mist. A lone, jagged rock, barely visible above the foam, rises just off the starboard bow. The foreground is a jumble of splintered planks and a single, overturned lifeboat, its white paint streaked with salt and kelp. The only light comes from a weak, ochre sunset breaking through a narrow gap in the clouds, casting a long, somber gleam on the wet deck and the broken water.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-30T08:12:58Z"
+}
