@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-31",
+  "year": 1991,
+  "event": {
+    "text": "Soviet Special Purpose Police Unit troops killed seven Lithuanian customs officials in Medininkai in the most serious attack of their campaign against Lithuanian border posts.",
+    "page_title": "OMON",
+    "page_extract": "OMON is a system of military special police units within the National Guard of Russia. It previously operated within the structures of the Soviet and Russian Ministry of Internal Affairs (MVD). Originating as the special forces unit of the Soviet militsiya in 1988, it has played major roles in several armed conflicts during and following the 1991 dissolution of the Soviet Union.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Patch_of_the_OMON.svg/330px-Patch_of_the_OMON.svg.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/OMON"
+  },
+  "title": "Threshold of Snow and Blood, MCMXCI",
+  "medium": "Oil on canvas, 2024",
+  "artist_statement": "I saw a photograph of a customs booth at dawn, and the stillness of it made my hands tremble. The light was thin and gray, as if the sun itself hesitated. I wanted to paint that hesitation, the way a border is just a line until someone dies for it.",
+  "image_prompt": "A low, gray dawn over a snow-covered roadblock near a forest edge. A small wooden customs booth stands alone, its window dark. Fresh snow on the ground is disturbed by dark footprints leading toward the booth. In the middle distance, a single figure in a heavy winter coat lies face-down in the snow, one arm outstretched. The only colors are the pale gray of the sky, the white of the snow, and a faint reddish-brown stain spreading near the fallen figure. A line of bare birch trees recedes into the mist, their thin branches like cracks in the air. The light comes from a hidden sun behind a thick layer of clouds, casting no shadows. The brushwork is tight and restrained, with a heavy impasto for the snow and a thinner, more glazed treatment for the sky. The composition is balanced, with the booth on the left, the fallen figure slightly right of center, and the birch line drawing the eye into the deep, cold distance.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-07-31T08:39:34Z"
+}
