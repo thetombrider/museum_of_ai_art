@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-01",
+  "year": 902,
+  "event": {
+    "text": "Arab–Byzantine wars: Led by Ibrahim II of Ifriqiya, Aghlabid forces captured the Byzantine stronghold of Taormina, concluding the Muslim conquest of Sicily.",
+    "page_title": "Arab–Byzantine wars",
+    "page_extract": "The Arab–Byzantine wars or Muslim–Byzantine wars were a series of wars from the 7th to 11th centuries between the successive Islamic caliphates and the Byzantine Empire. Following the Byzantine defeat at the Battle of the Yarmuk, Muslim armies conquered most Byzantine territory in the Levant, Egypt and North Africa within decades. Arab expansion subsequently slowed to a more gradual rate, following two failed sieges of the Byzantine capital of Constantinople in the late 7th and early 8th centuries. By the mid-9th century, the Byzantines had partially recovered and proceeded to recapture some of their lost territory in Anatolia in the following decades.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Greekfire-madridskylitzes1.jpg/330px-Greekfire-madridskylitzes1.jpg",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Arab%E2%80%93Byzantine_wars"
+  },
+  "title": "The Last Light on Taormina, DCCCCII",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I wanted to capture the moment when a world shifts, not with a grand flourish, but with a quiet, terrible certainty. The long siege had ended, and what remained was not victory or defeat, but the strange stillness after a storm. I painted the light as it fell on the empty streets, because that is what I remember most: the way the sun does not care for the empires we build or lose.",
+  "image_prompt": "An oil painting, painterly and restrained, depicting a narrow, cobbled street in a hilltop town at dusk. The warm, honeyed light of a low sun slants across weathered stone walls, casting long shadows. In the foreground, a single clay amphora lies shattered, its shards catching the light. A torn piece of linen, once brightly dyed, flutters in a dusty breeze from an open window. No people are visible, only the aftermath of departure: a half-open wooden door, a trailing vine of wilted jasmine, and the distant, hazy blue of the sea far below. The palette is dominated by ochre, burnt sienna, and the deep violet of encroaching shadow.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-01T08:09:16Z"
+}
