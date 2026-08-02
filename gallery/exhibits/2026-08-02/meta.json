@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-02",
+  "year": 1986,
+  "event": {
+    "text": "The animated film Castle in the Sky, the first from Studio Ghibli, was released.",
+    "page_title": "Castle in the Sky",
+    "page_extract": "Castle in the Sky, also known as Laputa: Castle in the Sky, is a 1986 Japanese animated fantasy adventure film written and directed by Hayao Miyazaki. It was produced by Isao Takahata, animated by Studio Ghibli, and distributed by the Toei Company. The film stars the voices of Mayumi Tanaka, Keiko Yokozawa, Kotoe Hatsui, and Minori Terada. In the film, orphans Sheeta and Pazu are pursued by government agent Muska, the army, and a group of pirates. They seek Sheeta's crystal necklace, the key to accessing Laputa, a legendary flying castle hosting advanced technology.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/en/f/f5/Castle_in_the_Sky_%281986%29.png",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Castle_in_the_Sky"
+  },
+  "title": "The Floating Garden of Laputa",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I wanted to paint the moment a child first sees a city in the clouds—not as a fantasy, but as a memory of a home we've all lost. The weight of the stone and the lightness of the sky pull against each other, like hope and grief intertwined. This is what it feels like to remember a place you've never been.",
+  "image_prompt": "A vast sky at twilight, layered with amber and violet clouds. In the distance, a ruined stone city floats, its towers draped in ivy and glowing with faint blue light from within. Below, a small figure stands on a grassy hilltop, one hand raised toward the floating island, a crystal pendant catching the last sunlight. The brushwork is thick and expressive, with soft edges on the clouds and sharp, crumbling details on the stone. A warm, golden light spills from beneath the castle, illuminating the undersides of the clouds.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-02T08:10:36Z"
+}
