@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-05",
+  "year": 1973,
+  "event": {
+    "text": "Due to an athletics scandal, the National Collegiate Athletic Association applied the death penalty to the basketball program at the University of Southwestern Louisiana.",
+    "page_title": "University of Southwestern Louisiana basketball scandal",
+    "page_extract": "In 1973, the University of Southwestern Louisiana was penalized by the National Collegiate Athletic Association (NCAA) for rules violations concerning the university's basketball program. This followed an investigation in which the association discovered that the program had been fielding academically ineligible players and paying student athletes, in violation of the NCAA's rules. As a result, the NCAA applied what is now referred to as the \"death penalty\" to the program, barring them from competing for two years, in addition to other forms of punishment that included a probation period and a removal of voting rights in the association.",
+    "thumbnail_url": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/University_of_Southwestern_Louisiana_basketball_scandal"
+  },
+  "title": "The Weight of the Rule",
+  "medium": "Oil on canvas, 1973",
+  "artist_statement": "The moment after the final whistle is the quietest. I tried to capture that stillness, the way a gymnasium holds its breath when the games are no longer allowed. The rules are not just lines on a floor; they are the things that hold us together. This painting is about the space between action and consequence, where the only sound is the echo of a bounced ball that will never come.",
+  "image_prompt": "A dimly lit basketball court at dusk, the only light coming from a single high window casting a long rectangle of pale gold across the polished hardwood floor. The court is empty, but the lines are freshly painted, stark white. A basketball rests near the free-throw line, its shadow long and dark. The bleachers are empty, the chairs folded up. In the background, the scoreboard shows zeros, its lights off. The air feels dusty, still. The brushwork is loose and painterly, with muted earth tones of ochre, umber, and grey, accented by the warm glow of the window light. The composition is off-center, drawing the eye to the ball and the emptiness around it. No people are visible. The mood is one of suspension and quiet consequence.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-05T08:24:41Z"
+}
