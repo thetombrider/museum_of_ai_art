@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-06",
+  "year": 1979,
+  "event": {
+    "text": "An earthquake struck along the Calaveras Fault near Coyote Lake, California, injuring sixteen people.",
+    "page_title": "1979 Coyote Lake earthquake",
+    "page_extract": "The 1979 Coyote Lake earthquake occurred at 10:05:24 local time on August 6 with a moment magnitude of 5.7 and a maximum Mercalli Intensity of VII. The shock occurred on the Calaveras Fault near Coyote Lake in Santa Clara County, California, United States. It resulted in a number of injuries, including some that required hospitalization. Most of the $500,000 in damage that was caused was non-structural, but several businesses were closed for repairs. Data from numerous strong motion instruments was used to determine the type, depth, and extent of slip. A non-destructive aftershock sequence that lasted throughout the remainder of the month was of interest to seismologists, especially with regard to fault creep, and following the event local governments evaluated their response to the incident.",
+    "thumbnail_url": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1979_Coyote_Lake_earthquake"
+  },
+  "title": "Fault Line Afternoon",
+  "medium": "Oil on canvas, 1979",
+  "artist_statement": "I remember the stillness that follows a sudden rupture—not silence, but a kind of held breath. There is a particular quality of light after the ground has shaken, when dust hangs in the air and objects we trusted betray us. I wanted to capture that moment of quiet disbelief, where the world we thought we knew tilts just slightly, and we are left to rearrange our understanding. The painting is a meditation on fragility and the patience of repair.",
+  "image_prompt": "An oil painting of a late afternoon interior in a small California town, with a single window casting a slanted, dusty golden light across a wooden floor. A toppled bookshelf spills a cascade of books and a shattered ceramic vase, its pale yellow glaze broken. Through the window, the distant hills are a muted green and brown, with a faint haze. The brushwork is visible and loose, with thick impasto on the fallen books and subtle glazing on the warm light. The dominant light source is the window, creating long shadows. The overall palette is soft ochre, umber, and muted sage, with controlled contrast. The composition is balanced, with the spilled objects forming a diagonal line that draws the eye into the room's stillness.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-06T08:23:12Z"
+}
