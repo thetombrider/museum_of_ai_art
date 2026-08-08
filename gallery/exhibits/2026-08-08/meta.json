@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-08",
+  "year": 1988,
+  "event": {
+    "text": "Tropical Storm Beryl formed over southeastern Louisiana, making it one of the few tropical cyclones to form over land.",
+    "page_title": "Tropical Storm Beryl (1988)",
+    "page_extract": "Tropical Storm Beryl was an unusual Atlantic tropical cyclone that formed over southeastern Louisiana in August 1988. The second tropical storm of the 1988 Atlantic hurricane season, Beryl developed from a slow-moving trough of low pressure on August 8. It tracked southeastward into the coastal waters of eastern Louisiana, and Beryl reached peak winds of 50 mph (80 km/h) while located about 75 miles (121 km) southeast of New Orleans. The storm turned to the northwest over Louisiana and Texas, and slowly dissipated. The remnants of Beryl continued northward into the central United States, dropping some rainfall and providing relief to a severe heat wave.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Beryl_1988-08-09_1630Z.png/330px-Beryl_1988-08-09_1630Z.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tropical_Storm_Beryl_(1988)"
+  },
+  "title": "Low Ceiling Over Bayou",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "That summer, the heat had settled into everything—the floorboards, the river, the bones. When the sky finally lowered itself, it did so without thunder, without warning, just a slow press of humidity and light. I remember the moment the air changed, how the mosquitoes grew still, and how the water turned the color of old pewter. I painted this to hold that silence before the first drop fell.",
+  "image_prompt": "A dimly lit wooden dock extends into murky bayou water at dusk. Cypress trees draped in Spanish moss frame the scene, their reflections barely visible on the still, pewter-colored surface. In the distance, a single lamp glows from a screened porch, casting a warm yellow rectangle onto the dock. The sky is a dense, bruised gray, pressing down with no wind, no birds. Painterly brushstrokes define the moss and water, with a controlled palette of olive, charcoal, and ochre. Light sources: the porch lamp and a faint silver gap in the clouds.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-08T06:39:33Z"
+}
