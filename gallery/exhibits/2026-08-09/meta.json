@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-09",
+  "year": 2023,
+  "event": {
+    "text": "Ecuadorian presidential candidate Fernando Villavicencio was assassinated in Quito, eleven days before the general election.",
+    "page_title": "Fernando Villavicencio",
+    "page_extract": "Fernando Alcibiades Villavicencio Valencia was an Ecuadorian journalist, trade unionist, and politician who ran for president of Ecuador in the 2023 Ecuadorian general election. He served as a member of the National Assembly from 2021 until the dissolution of the legislative body on 17 May 2023, which caused the 2023 Ecuadorian political crisis and a snap election.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Fernando_Villavicencio_2023.jpg/330px-Fernando_Villavicencio_2023.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Fernando_Villavicencio"
+  },
+  "title": "The Unfinished Speech",
+  "medium": "Oil on linen, 2023",
+  "artist_statement": "I wanted to capture the silence that follows a voice cut short. There is a weight in the empty space where a promise once stood, a stillness that feels louder than any roar. The light still falls on the podium, but no one steps forward to claim it.",
+  "image_prompt": "A dimly lit campaign rally stage after the crowd has fled. A single microphone stands on a wooden podium, its metal mesh catching a warm amber spotlight from above. To the left, a folding chair lies on its side, its legs pointing toward the shadows. A blue campaign banner hangs crookedly in the background, partially torn. On the floor near the podium, a scattered stack of papers and a tipped-over cup of water glisten under the light. The palette is muted: deep indigos, burnt umber, and ochre, with the spotlight creating a stark contrast. Thick impasto on the fallen chair and papers; thin, almost transparent washes on the dark walls. The atmosphere is heavy and still, as if the air itself is holding its breath.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-09T06:43:07Z"
+}
