@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-10",
+  "year": 2007,
+  "event": {
+    "text": "Amid large protests against the impending demolition of the Queen's Pier, the Hong Kong High Court dismissed legal attempts to preserve the landmark.",
+    "page_title": "Queen's Pier",
+    "page_extract": "Queen's Pier, named after Queen Victoria, was a public pier in front of City Hall in Edinburgh Place, Central, Hong Kong. For three generations it served not only as a public pier in day-to-day use but also as a major ceremonial arrival and departure point. The pier witnessed the official arrival in Hong Kong of all of Hong Kong's governors since 1925; Elizabeth II landed there in 1975, as did the Prince and Princess of Wales in 1989.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Queen%27s_Pier_at_night.jpg/330px-Queen%27s_Pier_at_night.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Queen's_Pier"
+  },
+  "title": "The Last Embarkation",
+  "medium": "Oil on linen, 2007",
+  "artist_statement": "I saw the crowd that day, not as a mob but as a human tide breaking against a granite shore. Their faces held the same light that once fell on ceremonial arrivals, but now it was a farewell light, amber and thick as honey. I wanted to paint the moment when a place ceases to be a landmark and becomes a memory—when the stone itself begins to ache.",
+  "image_prompt": "A wide, low-angle view of a stone pier at dusk, its iron lampposts casting pools of warm yellow light onto worn granite steps. A dense crowd of people stands on the pier, their backs to the viewer, facing a darkening sea. The sky is a deep violet-green, with a single streak of gold on the horizon. Brushwork is heavy and expressive, with thick impasto on the light pools and the folds of clothing. The pier's railing is chipped and rusted, glinting with salt spray. A few abandoned placards lie crumpled on the ground. The atmosphere is one of quiet vigil, not anger.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-10T07:19:23Z"
+}
