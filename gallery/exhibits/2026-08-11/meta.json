@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-11",
+  "year": 1999,
+  "event": {
+    "text": "Ken Levine's System Shock 2 was released to mediocre sales, but later received critical acclaim and influenced subsequent first-person shooter game design.",
+    "page_title": "Ken Levine (game developer)",
+    "page_extract": "Kenneth M. Levine is an American video game developer. He is the creative director and co-founder of Ghost Story Games. He led the creation of the BioShock series and is also known for his work on System Shock 2.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Ken_Levine_2014_GDC_cropped.jpg/330px-Ken_Levine_2014_GDC_cropped.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ken_Levine_(game_developer)"
+  },
+  "title": "The Corridor",
+  "medium": "Oil on canvas, 1999",
+  "artist_statement": "I remember the quiet hum of the machine in that cold, blue light. There was a sense of something vast and empty waiting behind the screen, a silence that held both dread and possibility. I wanted to capture that moment when a world is born not in triumph, but in the stillness before anyone knows it exists.",
+  "image_prompt": "A dimly lit corridor, the walls slick with condensation, receding into deep shadow. A single bare bulb hangs from a frayed wire, casting a harsh, yellow light on the metal floor. In the foreground, a chair sits empty before a bulky cathode-ray tube monitor, its screen a faint, pulsating blue. Dust motes float in the beam of light. The palette is muted: deep grays, bruised blues, and the sickly green of old circuitry. The paint is applied in thick, deliberate strokes, especially in the highlights on the monitor's casing and the reflections on the floor. The atmosphere is one of solitude and waiting, as if the occupant has just stepped away but may not return. No people are visible.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-11T06:54:59Z"
+}
