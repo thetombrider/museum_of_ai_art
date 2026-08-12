@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-12",
+  "year": 1969,
+  "event": {
+    "text": "The Troubles: Riots erupted in the neighbourhood of Bogside in Derry, and spread across much of Northern Ireland.",
+    "page_title": "The Troubles",
+    "page_extract": "The Troubles were an ethno-nationalist conflict in Northern Ireland that lasted for about 30 years from the late 1960s to 1998. Also known internationally as the Northern Ireland conflict, it began in the late 1960s and is usually deemed to have ended with the Good Friday Agreement of 1998. Although the Troubles mostly took place in Northern Ireland, at times violence spilled over into parts of the Republic of Ireland, England, and mainland Europe.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Map_of_Ireland%27s_capitals.png/330px-Map_of_Ireland%27s_capitals.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/The_Troubles"
+  },
+  "title": "Street Light at Dusk",
+  "medium": "Oil on linen, 1969",
+  "artist_statement": "I remember the way the light fell that evening—a sickly yellow pooling on wet cobblestones. There was a smell of smoke and rain. I wanted to paint the weight of a place where hope had become a fragile, flickering thing. The figures are not heroes or villains, just people caught in the long shadow of a street lamp.",
+  "image_prompt": "A narrow street in a working-class neighbourhood at dusk. A single street lamp casts a harsh yellow glow on wet cobblestones, illuminating the facades of red-brick row houses with dark, empty windows. A few figures stand in the shadows, their faces obscured, while a thin curl of smoke rises from a trash can near a stone wall. The sky is a heavy, bruised purple. Painterly brushwork, muddied greys and ochres, one dominant light source, composition reminiscent of Edward Hopper.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-12T07:14:46Z"
+}
