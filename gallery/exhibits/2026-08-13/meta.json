@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-13",
+  "year": 582,
+  "event": {
+    "text": "Maurice was crowned as Byzantine emperor, succeeding Tiberius II Constantine.",
+    "page_title": "Maurice (emperor)",
+    "page_extract": "Maurice was Eastern Roman emperor from 582 to 602 and the last member of the Justinian dynasty. A successful general, Maurice was chosen as heir and son-in-law by his predecessor Tiberius II.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Solidus_of_Maurice_%28transitional_issue%29.png/330px-Solidus_of_Maurice_%28transitional_issue%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Maurice_(emperor)"
+  },
+  "title": "The Weight of Purple",
+  "medium": "Egg tempera and gold leaf on panel, 582",
+  "artist_statement": "I tried to paint the moment when a man understands that he is no longer just a soldier. The crown is not a reward—it is a door closing behind him. I wanted the gold to feel heavy, like the last light before a storm.",
+  "image_prompt": "A dimly lit chamber in an ancient palace, where a lone figure in a military cloak stands before a low table. On the table rests a heavy gold crown, its surface catching the only light—a thin shaft from a high window. The man's face is half in shadow, his hand hovering near the crown but not yet touching it. The air is still, dust motes floating in the golden beam. The walls are adorned with faded frescoes of battles and saints. The palette is dominated by deep purples, ochres, and muted golds, with a single streak of warm light across the crown and the man's weathered hand.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-13T07:16:25Z"
+}
