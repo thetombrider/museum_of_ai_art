@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-15",
+  "year": 718,
+  "event": {
+    "text": "Forces of the Umayyad Caliphate abandoned a year-long siege of Constantinople, ending their goal of conquering the Byzantine Empire.",
+    "page_title": "Umayyad Caliphate",
+    "page_extract": "The Umayyad Caliphate or the Umayyad Empire was the second caliphate established after the death of the Islamic prophet Muhammad and was ruled by the Umayyad dynasty from 661 to 750. It succeeded the Rashidun Caliphate, of which the third caliph, Uthman ibn Affan, was also a member of the Umayyad clan. The Umayyad family established hereditary rule under Mu'awiya ibn Abi Sufyan, the long-time governor of Syria, who became caliph after emerging victorious in the First Fitna following the assassination of Ali in 661. Syria remained the Umayyads' core power base thereafter, with Damascus as their capital. After Mu'awiya's death in 680, Umayyad authority was challenged in the Second Fitna, during which the Sufyanid line was replaced in 684 by Marwan ibn al-Hakam, who founded the Marwanid line that restored Umayyad rule over the Caliphate.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg/330px-Umayyad_Caliphate_720_AD_%28orthographic_projection%29.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Umayyad_Caliphate"
+  },
+  "title": "The Long Retreat",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I spent months watching the slow withdrawal, the dust rising like a sigh. There is a heaviness in the air when a siege breaks—not the joy of victory, but the exhaustion of survival. This work tries to hold that weight, the quiet after the storm, the way the horizon seems wider when the tents are gone.",
+  "image_prompt": "A low, dusty twilight over a vast plain, the last columns of horsemen and camels receding into the haze. The sun, a pale orange disc, sits just above the horizon, casting long shadows that stretch toward the viewer. In the foreground, scattered remnants of a camp: a broken water jar, a faded banner half-buried in the sand, a single spear standing upright. The sky is layered with streaks of ochre, bruised violet, and faint gold. The brushwork is thick and painterly, with impasto highlights on the armor and the folds of the retreating cloaks. A lone figure on horseback turns back, his face obscured by shadow, his hand resting on the reins. The light is soft, diffused by a thin layer of dust, giving the entire scene a melancholic stillness. No explicit markers of war or victory; only the quiet, inevitable departure.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-15T06:25:31Z"
+}
