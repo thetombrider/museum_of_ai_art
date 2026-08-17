@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-17",
+  "year": 1676,
+  "event": {
+    "text": "Scanian War: Swedish forces defeated Danish troops at the Battle of Halmstad.",
+    "page_title": "Scanian War",
+    "page_extract": "The Scanian War was a part of the Northern Wars involving the union of Denmark–Norway, Brandenburg and Sweden. It was fought from 1675 to 1679 mainly on Scanian soil, in the former Danish–Norwegian provinces along the border with Sweden, and in northern Germany. While the latter battles are regarded as a theater of the Scanian war in English, Danish, Norwegian and Swedish historiography, they are seen as a separate war in German historiography, called the Swedish-Brandenburgian War.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Scanian_War_Collage.jpg/330px-Scanian_War_Collage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Scanian_War"
+  },
+  "title": "The Grey Clearing",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I remember mornings when the light sat low and heavy, like it didn't want to be seen. There is a stillness that follows motion—when the noises have stopped but the air still trembles. I painted this to honor that quiet, the way a field holds the tension of what just transpired, before the crows return.",
+  "image_prompt": "A damp, overcast morning in a northern wood clearing. Bare birch trees with peeling white bark frame the scene. The ground is churned mud and scattered dead leaves, with patches of lingering snow. A single raven perches on a low, broken branch, its eye a bead of wet obsidian. In the middle distance, a discarded iron helmet half-sunk in the mud reflects a sliver of pale, difused light. The atmosphere is heavy with mist and silence. Brushwork is thick and impressionistic, with a muted palette of grays, umbers, and bone whites. The composition leads the eye diagonally from the helmet to the raven and up into the grey sky.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-17T06:40:25Z"
+}
