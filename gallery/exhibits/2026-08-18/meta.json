@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-18",
+  "year": 1864,
+  "event": {
+    "text": "American Civil War: At the Battle of Globe Tavern, Union forces attempted to sever the Weldon Railroad during the siege of Petersburg.",
+    "page_title": "American Civil War",
+    "page_extract": "The American Civil War was a civil war in the United States between the Union and the Confederacy, which was formed in 1861 by states that had seceded from the Union to preserve slavery in the United States. The South saw slavery as threatened because of the election of Abraham Lincoln and the growing abolitionist movement in the North. The war ended with Union victory, the dissolution of the Confederacy and the abolition of slavery, freeing four million African Americans.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Battle_of_Gettysburg%2C_by_Currier_and_Ives.png/330px-Battle_of_Gettysburg%2C_by_Currier_and_Ives.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/American_Civil_War"
+  },
+  "title": "The Rail at Dusk",
+  "medium": "Oil on linen, 1865",
+  "artist_statement": "I wanted to paint not the noise of battle, but the silence that follows. The Weldon line lay broken like a promise, and I thought of all the hands that would never again touch a rail, a tool, a loved one. The smoke still clings to the trees as if the forest itself cannot let go. This is a piece about the weight of a severed connection, and the earth's quiet witness.",
+  "image_prompt": "A muddy railroad track, its rails twisted and torn from the earth, receding into a misty, late-afternoon landscape. The light is low and golden, casting long shadows from shattered pine trees that stand like ghostly sentinels. A single abandoned Union knapsack lies half-submerged in mud near a splintered wooden tie. The palette is muted: umber, ochre, burnt sienna, with a pale yellow sky bleeding into grey. Visible brushstrokes emphasize the texture of wet earth and rusted iron. No figures, only the aftermath",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-18T06:31:25Z"
+}
