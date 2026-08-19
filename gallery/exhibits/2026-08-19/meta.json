@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-19",
+  "year": 2003,
+  "event": {
+    "text": "A car bomb destroyed the United Nations headquarters at Baghdad's Canal Hotel, killing Brazilian diplomat Sérgio Vieira de Mello and 21 others.",
+    "page_title": "Canal Hotel bombing",
+    "page_extract": "The Canal Hotel bombing was a suicide truck bombing in Baghdad, Iraq, during the afternoon of 19 August 2003. It killed 23 people, including the United Nations' (UN) Special Representative in Iraq Sérgio Vieira de Mello, and wounded over 100, including human rights lawyer and political activist Amin Mekki Medani. The attack targeted the United Nations Assistance Mission in Iraq created just five days earlier. The attack resulted in the withdrawal within weeks of most of the 600 UN staff members from Iraq. These events were to have a profound and lasting impact on the UN's security practices globally.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/UNOfficeofHumanitarianCoordinator-Baghdad_%28UN_DF-SD-04-02188%29.jpg/330px-UNOfficeofHumanitarianCoordinator-Baghdad_%28UN_DF-SD-04-02188%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Canal_Hotel_bombing"
+  },
+  "title": "The Collapse of a Late Afternoon",
+  "medium": "Oil on linen, 2003",
+  "artist_statement": "I remember the light that summer, how it seemed to drain out of the sky too quickly. I wanted to capture that moment when the air turns thick with dust and silence, when the walls that once held voices suddenly fall. The debris is not just concrete; it is the shards of a thousand unspoken agreements. My painting is an attempt to hold that weight, to let the stillness after the blast speak louder than the noise before.",
+  "image_prompt": "A low, late-afternoon sun casts long shadows through a haze of ochre dust, illuminating the jagged remnants of a pale concrete building. A single blue plastic chair lies twisted among scattered papers and shattered glass. In the distance, a column of black smoke rises against a pale, heat-bleached sky. The foreground shows a dry, cracked roadside with a few wilted weeds, their shadows stretching toward the rubble. The light is warm but sourceless, filtered through suspended motes. The palette is muted: sand, slate, ochre, a faded UN blue barely visible on a torn fabric scrap, all rendered with thick, impasto brushwork that gives the scene a gritty, tactile gravity.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-19T06:32:41Z"
+}
