@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-20",
+  "year": 1892,
+  "event": {
+    "text": "Celtic Park, the largest football stadium in Scotland and home of Celtic F.C., opened.",
+    "page_title": "Celtic Park",
+    "page_extract": "Celtic Park is a football stadium and the home of Scottish Premiership team Celtic, in the Parkhead area of Glasgow, Scotland. With a capacity of 60,411, it is the largest football stadium in Scotland, and the eighth-largest football stadium in the United Kingdom. It is often known as Parkhead, and nicknamed Paradise.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Celtic_Park_during_an_Old_Firm_derby_between_Celtic_FC_and_Rangers_FC.jpg/330px-Celtic_Park_during_an_Old_Firm_derby_between_Celtic_FC_and_Rangers_FC.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Celtic_Park"
+  },
+  "title": "First Light at Paradise",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I wanted to capture the quiet before the roar—the moment a new place is consecrated by hope alone. The scaffolding still stood, and the grass had not yet been scarred by studs. I painted that suspended breath, the pitch waiting for its first prayer.",
+  "image_prompt": "A low sun breaks through a gray Glasgow sky, casting long golden rays across a vast empty football pitch. The grass is a deep, wet green, and the stands rise like dark wooden ribs, freshly built, still smelling of sawdust and paint. A single figure in a long coat stands near the center circle, hands in pockets, head tilted upward. The light catches the white lines of the field and the rim of a distant rooftop. Heavy clouds hang overhead, but a thin band of amber sky glows at the horizon. The scene is painterly, with thick brushwork, soft edges, a muted palette of ochre, slate, and viridian, and a single dominant light source from the left.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-20T06:33:56Z"
+}
