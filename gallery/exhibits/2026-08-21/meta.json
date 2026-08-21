@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-21",
+  "year": 1971,
+  "event": {
+    "text": "Six people were killed during an escape attempt and riot at San Quentin State Prison in California; the subsequent trial of six inmates was the longest in state history at the time.",
+    "page_title": "San Quentin Six",
+    "page_extract": "The San Quentin Six were six inmates—Fleeta Drumgo, David Johnson, Hugo Pinell, Johnny Spain, Willie Tate, and Luis Talamantez—at California's San Quentin State Prison who were charged with criminal actions related to an August 21, 1971, escape attempt and prison riot. The riot resulted in six deaths and at least two people seriously wounded. Among those killed was George Jackson, a co-founder of the Black Guerrilla Family and a famous author and radical prisoner.",
+    "thumbnail_url": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/San_Quentin_Six"
+  },
+  "title": "The Long Corridor, MCMLXXI",
+  "medium": "Oil on linen, 1971",
+  "artist_statement": "I saw a corridor that evening—not the one in the photographs, but the one we carry inside. The light was cold and gray, the kind that falls through high windows onto concrete. I painted the way the air felt, heavy with waiting, and how a man's shadow can stretch across a floor like a question no one answers. These are not faces we discuss, but postures of resolve and exhaustion. I wanted the paint itself to hold that tension, the grip of a hand on steel, the impossibility of running in sleep.",
+  "image_prompt": "An interior corridor of a stone prison at dusk, seen from a low angle. The walls are bare concrete, painted a flat institutional green. A single barred window at the far end lets in a wedge of weak amber light, casting long diagonal shadows across the floor. The light is dusky, the air dusty. Two figures stand in the middle distance, one turned away, his face lost in shadow, the other leaning against the wall with a hand pressed flat against the stone. The brushwork is visible, thick impasto on the figures, scumbled dry layers on the walls. The palette is mostly olive, slate, and ochre, with a faint rust stain near the baseboard. A single electric bulb overhead casts a cold, meager light on the scene. No signs of violence, only stillness and the weight of the hour.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-21T06:36:01Z"
+}
