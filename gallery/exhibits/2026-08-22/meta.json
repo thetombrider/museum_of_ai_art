@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-22",
+  "year": 1985,
+  "event": {
+    "text": "A fire broke out on British Airtours Flight 28M at Manchester Airport, causing 55 deaths mostly due to smoke inhalation, and leading to changes to make aircraft evacuation more effective.",
+    "page_title": "1985 Manchester Airport disaster",
+    "page_extract": "The 1985 Manchester Airport disaster occurred when British Airtours Flight 28M, an international passenger flight, was en route from Manchester Airport to Corfu International Airport. It caught fire on takeoff on 22 August 1985, resulting in 55 fatalities.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/BrAirtours_28M_8-1988_B.jpg/330px-BrAirtours_28M_8-1988_B.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1985_Manchester_Airport_disaster"
+  },
+  "title": "Smoke in the Terminal Air (MCMLXXXV)",
+  "medium": "Oil on linen, 2024",
+  "artist_statement": "I remember that August afternoon, the way the light held its breath before the sirens. I paint not the fire itself but the still, terrible moment after—a spilled suitcase, a child's shoe, the hold of a hand against imagined warmth. These are the ghosts we carry forward, the ones we never properly greet.",
+  "image_prompt": "A hazy, late-summer afternoon at a gray tarmac apron. A single overturned suitcase lies on the concrete, its contents scattered—a folded newspaper, a child's red shoe, a half-melted cassette tape. In the distance, a smoldering engine compartment emits a thin, sickly white smoke that curls upward into a pale blue sky. The light is soft, diffused through a veil of smoke, casting long, melancholy shadows. The palette is muted ochre, ash gray, and faded ultramarine. Painterly brushstrokes suggest the wreckage without detailing it, and the composition focuses on emptiness and the human objects left behind.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-22T06:28:29Z"
+}
