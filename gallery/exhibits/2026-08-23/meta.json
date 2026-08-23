@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-23",
+  "year": 1989,
+  "event": {
+    "text": "Singing Revolution: Approximately two million people joined hands to form a human chain spanning 675.5 kilometres (419.7 mi) across the Estonian, Latvian and Lithuanian Soviet republics to demonstrate their desire for independence.",
+    "page_title": "Singing Revolution",
+    "page_extract": "The Singing Revolution was a series of events from 1987 to 1991 that led to the restoration of independence of the three Soviet-occupied Baltic countries of Estonia, Latvia, and Lithuania at the end of the Cold War. The Soviet Union annexed the Baltics around 1940, following the Molotov-Ribbentrop Pact, though this annexation was not widely recognized. During the subsequent occupation, the Soviet Union suppressed local languages, religious institutions, and cultural expression, and carried out large-scale deportations and political repression.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Leaders_of_the_Supreme_Council_of_Lithuania_on_11_March_1990.jpg/330px-Leaders_of_the_Supreme_Council_of_Lithuania_on_11_March_1990.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Singing_Revolution"
+  },
+  "title": "The Unbroken Line",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I was drawn to the weight of that silence before the song. There is a particular quality of light in the Baltic autumn, low and golden, that makes every figure stand out as both human and anonymous. I wanted to capture the tension between individual fragility and collective resolve, the way a line of hands becomes a kind of geography. This painting is an attempt to hold that moment still, before it slips into the past.",
+  "image_prompt": "A vast, open landscape under a low, golden autumn sun. Hundreds of figures stand along a winding dirt road, their hands joined, forming a chain that stretches to the horizon. The light is pale and warm, casting long shadows across the uneven ground, which is dotted with patches of dry grass and late wildflowers. The figures are painted with broad, expressive brushstrokes, their faces turned away or softened, their coats and hair stirred by a visible wind. The palette is muted: ochre, umber, slate blue, and a strip of pale sky. In the distance, a single bird arcs across the thin clouds. The foreground is thick with impasto, fading to thinner washes in the distance, creating a profound sense of depth and quiet unity.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-23T06:28:49Z"
+}
