@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-25",
+  "year": 1758,
+  "event": {
+    "text": "Seven Years' War: Prussian forces engaged the Russians at the Battle of Zorndorf in present-day Sarbinowo, Poland.",
+    "page_title": "Seven Years' War",
+    "page_extract": "The Seven Years' War, 1756 to 1763, was a global war fought by numerous great powers, primarily in Europe, with significant subsidiary campaigns in North America and the Indian subcontinent. The primary warring states were Great Britain and Prussia fighting against France and Austria, with other countries joining these coalitions: Portugal, Spain, Sweden, and Russia, plus Saxony and many other minor states of the Holy Roman Empire. Related conflicts include the Third Silesian War, French and Indian War, Third Carnatic War, Anglo-Spanish War (1762–1763), and Spanish–Portuguese War.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Seven_Years%27_War_Collage.jpg/330px-Seven_Years%27_War_Collage.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Seven_Years'_War"
+  },
+  "title": "The Weight of Unbroken Light",
+  "medium": "Oil on linen, 1758",
+  "artist_statement": "I remember the stillness before the storm, the way the sky held its breath over the fields. The men stood in their ranks, but I saw only the terrible patience of the earth, waiting to be torn. I painted this to hold that moment, the quiet that knows what is coming.",
+  "image_prompt": "A vast, flat landscape under a heavy, overcast sky, the light a dull silver through layers of cloud. In the middle distance, a long line of soldiers in blue and white uniforms stands motionless, their muskets like a dark fence. The grass is yellow and dry, trampled in patches. A single broken wagon wheel lies in the foreground, half-buried in mud. The air is thick with the smell of rain and smoke, though no fire is seen. The brushwork is loose and expressive, with thick impasto on the figures and a thin wash of earth colors on the ground. The only contrast is a pale, diffused glow on the horizon, as if the sun were trying and failing to break through.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-25T06:34:38Z"
+}
