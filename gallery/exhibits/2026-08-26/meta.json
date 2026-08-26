@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-26",
+  "year": 1071,
+  "event": {
+    "text": "Byzantine–Seljuk wars: Seljuk Turks led by Alp Arslan captured Byzantine emperor Romanos IV at the Battle of Manzikert, marking a decline in Byzantine fortunes.",
+    "page_title": "Byzantine–Seljuk wars",
+    "page_extract": "The Byzantine–Seljuk wars were a series of conflicts in the Middle Ages between the Byzantine Empire and the Seljuk Empire. They shifted the balance of power in Asia Minor, Armenia and Syria, sparking multiple wars for control over these regions, including the Crusades. These conflicts lasted until the collapse of the Sultanate of Rum in 1308.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Byzantium_vs_Seljuk_c_1071_cropped.png/330px-Byzantium_vs_Seljuk_c_1071_cropped.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Byzantine%E2%80%93Seljuk_wars"
+  },
+  "title": "The Dust Before the Throne",
+  "medium": "Oil on linen, 1071",
+  "artist_statement": "I saw how the light fell that afternoon—not gold, but the pale yellow of tired linen. There was no triumph in the air, only the weight of something ending. I painted the stillness after the clash, when even the horses stood as if they understood. We are all vanquished by something larger than ourselves.",
+  "image_prompt": "An oil painting in muted ochre, umber, and dusty indigo. The scene is a rocky hillside under a low, late-afternoon sun that casts long, exhausted shadows. In the foreground, a single unoccupied horse stands beside a broken spear half-buried in gravel. Beyond, a narrow dirt path winds through scattered boulders toward a distant walled city, its roofs smudged with smoke. The sky is a pale, bruised grey-blue, and the light catches the dust still suspended in the air, giving the whole scene a sense of held breath. The brushwork is loose in the sky and distant hills, tighter on the horse's tack and the weathered stones, with the sun as the principal source of illumination, warm and failing.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-26T06:36:21Z"
+}
