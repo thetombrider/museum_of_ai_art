@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-27",
+  "year": 1776,
+  "event": {
+    "text": "British forces led by William Howe defeated the Continental Army under George Washington at the Battle of Long Island, the largest battle of the American Revolutionary War.",
+    "page_title": "William Howe, 5th Viscount Howe",
+    "page_extract": "General William Howe, 5th Viscount Howe, was a British Army officer and politician who rose to become Commander-in-Chief, America, during the American War of Independence. Howe was one of three brothers who had distinguished military careers. In historiography of the American war, he is usually referred to as Sir William Howe to distinguish him from his brother Richard, who was 4th Viscount Howe at that time.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Gen._Sir_William_Howe.jpg/330px-Gen._Sir_William_Howe.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/William_Howe%2C_5th_Viscount_Howe"
+  },
+  "title": "Retreat in the August Haze",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I've been thinking about the way a landscape can hold memory without announcing it. The smoke from distant cannon fire hangs like fog, and the light is that peculiar amber of late summer that seems to slow everything down. I wanted to paint the moment before the outcome is known, when all that exists is the weight of a decision and the smell of damp grass underneath boot leather.",
+  "image_prompt": "A sprawling hillside under a heavy, amber-tinged sky, with distant columns of smoke rising like pale pillars among scattered trees. In the foreground, a single figure in ragged coat sits on a fallen log, head bowed, hands resting on his knees. The light is low and warm, casting long shadows across trampled grass and drying mud. A broken musket lies nearby, half-hidden in weeds. The brushwork is broad and painterly, with thick impasto on the highlights of the figure's coat and the leaves of a solitary oak. The palette favors ochre, umber, and muted gold, with a single streak of pewter-gray sky showing through the haze.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-27T17:12:21Z"
+}
