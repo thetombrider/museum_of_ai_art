@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-29",
+  "year": 1916,
+  "event": {
+    "text": "Congress passed the Philippine Autonomy Act, the first formal and official declaration of the U.S.'s commitment to grant independence to the Philippines.",
+    "page_title": "United States Congress",
+    "page_extract": "The United States Congress is the legislative branch of the federal government of the United States. It is a bicameral legislature, including a lower body, the U.S. House of Representatives, and an upper body, the U.S. Senate. They both meet in the United States Capitol in Washington, D.C.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Greater_coat_of_arms_of_the_United_States.svg/330px-Greater_coat_of_arms_of_the_United_States.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/United_States_Congress"
+  },
+  "title": "Promise Over the Pacific",
+  "medium": "Oil on linen, 1916",
+  "artist_statement": "I wanted to capture that quiet moment between a promise and its fulfillment. The light coming through the window felt heavy with hope, but also with the weight of all the distance and time ahead. The papers on the table are clean and waiting, but the dust in the air tells of journeys already made.",
+  "image_prompt": "In a high-ceilinged colonial office, a single shaft of late afternoon sun falls across a heavy wooden desk, illuminating a scroll of paper tied with a ribbon. To one side, a half-open window frames a distant view of a calm sea and the faint silhouette of an island on the horizon. On the desk, a ceramic inkwell with dry ink, a quill laid aside, and a small globe turned so the Pacific Ocean faces the viewer. The room is filled with warm, ochre shadows, and the dust motes hang suspended in the golden light. The brushwork is loose and painterly, with thick impasto on the illuminated scroll and thin glazes in the shadows. The mood is one of solemn waiting.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-29T12:05:40Z"
+}
