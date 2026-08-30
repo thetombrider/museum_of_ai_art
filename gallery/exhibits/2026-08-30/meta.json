@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-30",
+  "year": 1914,
+  "event": {
+    "text": "World War I: The Battle of Tannenberg resulted in the almost complete destruction of the Russian 2nd Army by the German 8th Army.",
+    "page_title": "World War I",
+    "page_extract": "World War I, or the First World War, also known as the Great War, was a global conflict between two coalitions: the Allies and the Central Powers. One of the deadliest conflicts in history, World War I resulted in an estimated 15 to 22 million deaths, including those in war crimes and genocides. The war also helped spread the Spanish flu pandemic. The conflict saw important developments in weaponry, including the first large-scale use of machine guns, artillery, aircraft, chemical weapons, and tanks.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/330px-Bataille_de_Verdun_1916.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_War_I"
+  },
+  "title": "The Chalk Map at the Edge of the Forest",
+  "medium": "Oil on linen, 1914",
+  "artist_statement": "I wanted to paint the stillness before the noise. The maps on the tables, the pins still holding their positions—these are the quiet objects of war. I find myself drawn to the space between decisions and their consequences, where the air itself seems to hold its breath. In that gap, I see the absurd fragility of human ambition.",
+  "image_prompt": "A dimly lit room with a large wooden table covered in a tattered map, edges curling from humidity. Two empty chairs face each other across the table. A single oil lamp casts a warm amber glow onto the map, highlighting a cluster of red and blue pins near the forest's edge. Through a small window with warped glass, one sees a dark line of pine trees under a heavy, overcast sky. The room smells of wax and paper. Brushstrokes are thick but controlled, with muted earth tones and a single vein of ochre marking a river on the map.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-30T11:01:20Z"
+}
