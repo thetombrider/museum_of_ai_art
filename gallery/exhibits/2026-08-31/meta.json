@@ -1,0 +1,21 @@
+{
+  "date": "2026-08-31",
+  "year": 1218,
+  "event": {
+    "text": "Al-Kamil became the fourth sultan of the Ayyubid dynasty of Egypt.",
+    "page_title": "Al-Kamil",
+    "page_extract": "Al-Malik al-Kamil Nasir ad-Din Muhammad, titled Abu al-Maʽali, was an Egyptian ruler and the fourth Ayyubid sultan of Egypt. During his tenure as sultan, the Ayyubids defeated the Fifth Crusade. He was known to the Frankish crusaders as Meledin, a name by which he is referred to in some older western sources. As a result of the Sixth Crusade, he ceded West Jerusalem to the Christians and is known to have met with Saint Francis.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Benozzo_Gozzoli_-_Scenes_from_the_Life_of_St_Francis%2C_Al-Kamil_detail_%28Scene_10%2C_north_wall%29_-_WGA10241.jpg/330px-Benozzo_Gozzoli_-_Scenes_from_the_Life_of_St_Francis%2C_Al-Kamil_detail_%28Scene_10%2C_north_wall%29_-_WGA10241.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Al-Kamil"
+  },
+  "title": "The Sultan's Accord, MCCXVIII",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I tried to paint the moment when power becomes tenderness. The air in that room was heavy with dust and the scent of old cedars. I wanted to show a man whose hand, having held a sword, now holds a key, not as a trophy but as a question.",
+  "image_prompt": "A dimly lit stone chamber, late afternoon light falling through a single high archway. A man in a simple dark robe, his face partly shadowed, sits at a low wooden table. On the table rests a large iron key, its metal catching the warm, dusty motes of light. One hand hovers near the key, not quite touching it. The walls are rough plaster, showing faint traces of ochre pigment. A shallow bowl of water reflects the archway's light. The brushwork is painterly, with visible strokes, especially in the shadows. The palette is earth tones: burnt umber, yellow ochre, ivory black, and a single note of pale blue in the distant sky visible through the arch.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-08-31T12:22:07Z"
+}
