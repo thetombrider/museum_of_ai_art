@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-01",
+  "year": 1145,
+  "event": {
+    "text": "The main altar of Lund Cathedral, then the Catholic cathedral of all the Nordic countries, was dedicated to Saint Lawrence and the Virgin Mary.",
+    "page_title": "Lund Cathedral",
+    "page_extract": "Lund Cathedral is a cathedral of the Lutheran Church of Sweden in Lund, Scania, Sweden. It is the seat of the Bishop of Lund and the main church of the Diocese of Lund. It was built as the Catholic cathedral of the archiepiscopal see of all the Nordic countries, dedicated to Saint Lawrence. It is one of the oldest stone buildings still in use in Sweden.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Lunds_domkyrka_augusti_2012.jpg/330px-Lunds_domkyrka_augusti_2012.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Lund_Cathedral"
+  },
+  "title": "Consecration in Stone (MCXLV)",
+  "medium": "Oil on oak panel, 2025",
+  "artist_statement": "I wanted to capture the moment when devotion becomes architecture—the weight of centuries pressed into one act of dedication. The light through the unfinished windows felt like a promise held in stone. There is a quiet solemnity in these early rites, a humility before the vastness of what faith can build. I hope the painting echoes that silence, heavy with hope.",
+  "image_prompt": "Inside a vast, unfinished Romanesque stone cathedral at dusk. Pale amber light streams through a high, round-arched window, illuminating dust motes and a solitary stone altar draped in simple white linen. A single candle flame flickers beside a carved wooden figure of a saint with a gridiron. Deep shadows gather in the vaulted ceiling and side aisles. The stone floor is uneven, worn. Two figures in plain woolen robes stand near the altar, their faces partly hidden, hands clasped. The brushwork is thick and somber, with ochre, umber, and stone gray dominating, a single shaft of warm light cutting diagonally across the scene.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-01T10:56:11Z"
+}
