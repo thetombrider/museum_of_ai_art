@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-02",
+  "year": 1885,
+  "event": {
+    "text": "White miners in Rock Springs, Wyoming, attacked Chinese-American immigrants, killing at least 28 Chinese miners and causing approximately $150,000 in property damage.",
+    "page_title": "Rock Springs, Wyoming",
+    "page_extract": "Rock Springs is a city in Sweetwater County, Wyoming, United States. The population was 23,526 at the 2020 census, making it the fifth-most populous city in the U.S. state of Wyoming, and the most populous city in Sweetwater County. Rock Springs is the principal city of the Rock Springs micropolitan statistical area, which has a population of 37,975.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/RockSpringsWY.jpg/330px-RockSpringsWY.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Rock_Springs%2C_Wyoming"
+  },
+  "title": "Ash and Ember, MDCCCLXXXV",
+  "medium": "Oil on linen, 1885",
+  "artist_statement": "I paint what I cannot forget: the color of burning wood against a winter sky, the way shadows stretch long across the ground when the light is low. There is a stillness after violence, a silence that feels heavier than sound. I try to hold that moment, not as history, but as a place one might still step into and feel the cold air thick with grief.",
+  "image_prompt": "A low winter sun casts long shadows over a dusty railroad town. In the foreground, a broken wooden fence leans against a trampled garden. A single lantern lies on its side, its glass shattered, the flame extinguished. Beyond, a narrow street recedes into hills where sagebrush clings to the earth. The sky is a pale, bruised yellow-gray, and smoke rises in thin, lazy columns from a distant row of small wooden houses. The light catches only the edges of things: the rim of a collapsed bucket, the splintered planks of a boarded window, the curve of a discarded shoe half-buried in ash. The palette is muted ochre, slate blue, and the brown of dried blood on packed dirt. Brushwork is visible but restrained, suggesting a hand that trembled while painting.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-02T10:21:39Z"
+}
