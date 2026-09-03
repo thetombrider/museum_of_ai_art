@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-03",
+  "year": 1941,
+  "event": {
+    "text": "The mass expulsion of Soviet Germans from the Volga German ASSR began.",
+    "page_title": "Deportation of Soviet Germans (1941–1942)",
+    "page_extract": "After the German invasion of the Soviet Union in June 1941, ethnic Germans living in the Soviet Union were subject to mass deportation starting from August 1941 by the NKVD on the orders of Soviet dictator Joseph Stalin. At least 846,340 Soviet Germans were deported in the first wave, while an additional 203,796 Germans forcibly repatriated from Germany and other parts of Eastern Europe were sent in the next wave to special settlements in the Soviet Union or gulags across Siberia and Kazakh SSR for forced labor. The Volga German Autonomous Soviet Socialist Republic was abolished. The Soviet government feared that Soviet Germans would collaborate with Nazi Germany and endanger the war effort, so it had the local Germans deported further east, where many died. By one estimate, there were 228,800 fatalities among the deported Soviet Germans.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Dobrinka_%28Frolovsky_District%29_01.jpg/330px-Dobrinka_%28Frolovsky_District%29_01.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Deportation_of_Soviet_Germans_(1941%E2%80%931942)"
+  },
+  "title": "The Cart in White (MCMLXI)",
+  "medium": "Oil on canvas, 2026",
+  "artist_statement": "The dust was not yet settled, but already the road stretched long and grey. I painted this because I could not forget the quiet of that morning—the strange brilliance of the sky above the people who carried nothing but hands. They were not in a war, but in a moment that swallowed them whole. For me, the cart, half-seen, holds all their silence.",
+  "image_prompt": "A grey-white sky looms over a dusty road. A wooden cart, one wheel broken, sits abandoned in the foreground. Beside it, a single black boot lies in the mud. In the distance, a line of small figures moves toward a horizon of endless, pale grass. The light is flat, coming from a hidden sun behind thin cloud, casting no sharp shadows. The brushwork is thick and dry, revealing the texture of the canvas. The palette is muted—ochre, ash, bone white, and a dull green where the grass clings to the ditches. A crow stands on the cart's edge, its head tilted toward the departing figures.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-03T10:30:57Z"
+}
