@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-04",
+  "year": 1912,
+  "event": {
+    "text": "The Albanian revolt ended when the Ottoman government agreed to meet most of the rebels' demands.",
+    "page_title": "Albanian revolt of 1912",
+    "page_extract": "The Albanian revolt of 1912 was the last revolt against the Ottoman Empire's rule in Albania and lasted from January until August 1912. The revolt ended when the Ottoman government agreed to fulfill the rebels' demands on 4 September 1912. Generally, Muslim Albanians fought against the Ottomans then governed by the Committee of Union and Progress.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Shkup1912.jpg/330px-Shkup1912.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Albanian_revolt_of_1912"
+  },
+  "title": "The Accord at Scutari",
+  "medium": "Oil on linen, 1912",
+  "artist_statement": "When the demands were met, I thought not of victory but of the long silence that follows any truce. These men had held their breath for months, and now the air was still. I wanted to paint that stillness—the moment before relief, when the weight of history shifts but has not yet settled.",
+  "image_prompt": "A late afternoon scene in a dusty hillside village. A group of men in traditional white felt caps and dark woolen cloaks stand in a loose semicircle around a low wooden table. On the table, a single lamp with a soot-stained glass chimney glows amber, its light catching the weary creases on the men's faces. Beyond them, a stone wall crumbles into the shadow of a single olive tree bent by the wind. The sky is a muted ochre, the clouds banded with the last light. The brushwork is thick, the palette limited to ochre, umber, and slate blue. The overall mood is one of exhausted calm—no flags, no gestures, only the light pooling on the worn tabletop and the long shadows stretching eastward.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-04T10:19:41Z"
+}
