@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-05",
+  "year": 1367,
+  "event": {
+    "text": "Swa Saw Ke became the ruler of the Kingdom of Ava in Upper Myanmar.",
+    "page_title": "Swa Saw Ke",
+    "page_extract": "Mingyi Swa Saw Ke was king of Ava from 1367 to 1400. He reestablished central authority in Upper Myanmar (Burma) for the first time since the fall of the Pagan Empire in the 1280s. He essentially founded the Ava Kingdom that would dominate Upper Burma for the next two centuries.",
+    "thumbnail_url": null,
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Swa_Saw_Ke"
+  },
+  "title": "The Unbroken Line",
+  "medium": "Oil on linen, 2025",
+  "artist_statement": "I wanted to capture the quiet moment before a reign begins—the weight of a crown that has not yet been worn, the dust of a kingdom still settling. There is a solemnity in the air, a sense that the past is not erased but folded into the fabric of a new beginning. The light falls on the stone as if to consecrate the path ahead.",
+  "image_prompt": "A dimly lit chamber in a ruined temple complex, dawn light filtering through a shattered doorway, casting long shadows across the stone floor. A single figure stands near a low stone altar, his hand resting on a ceremonial sword laid flat. The air is hazy with dust motes. The walls are covered in faded murals of ancient kings, their faces partially eroded. The palette is muted: ochre, umber, pale gold, and deep indigo. Brushwork is thick and expressive, with visible impasto in the highlights. The composition is balanced, with the figure off-center, looking down at the altar. The light source is the doorway, creating a strong chiaroscuro effect.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-05T09:48:43Z"
+}
