@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-06",
+  "year": 1995,
+  "event": {
+    "text": "Cal Ripken Jr. (pictured) played his 2,131st consecutive Major League Baseball game, breaking the 56-year-old record set by Lou Gehrig.",
+    "page_title": "Cal Ripken Jr.",
+    "page_extract": "Calvin Edwin Ripken Jr., nicknamed \"the Iron Man\", is an American former professional baseball shortstop and third baseman who played his entire 21-season career in Major League Baseball (MLB) for the Baltimore Orioles (1981–2001). One of his position's most productive offensive players, Ripken compiled 3,184 hits, 431 home runs, 1,695 runs batted in, and won two Gold Glove Awards for his defense during his career. He was a 19-time All-Star and was twice named American League (AL) Most Valuable Player (MVP), in 1983 and 1991.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Lieutenant_Governor_Boyd_Rutherford_with_Cal_Ripken_Jr_%28cropped%29.jpg/330px-Lieutenant_Governor_Boyd_Rutherford_with_Cal_Ripken_Jr_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cal_Ripken_Jr."
+  },
+  "title": "Iron Concordance",
+  "medium": "Oil on linen, 2025",
+  "artist_statement": "I wanted to hold still a moment when a great unbroken line became visible. The crowd's roar was a kind of wind, but under it was the sound of one man breathing evenly. These are the quiet monuments we build for ourselves, not of stone but of persistence, and they stand only as long as we do.",
+  "image_prompt": "In the lamplit dusk of a humid September evening, a lone figure in a soiled white uniform stands with head bowed on a diamond of worn grass, his shadow stretching long toward the empty bleachers. A single stadium light casts a harsh glow on the back of his jersey, the fabric damp at the shoulders. In his right hand, a small, scuffed baseball; in his left, a plain wooden bat rests on the dirt. Beyond the outfield wall, the signal lights of a distant train crossing blink red through the haze. The sky is a deep, bruised violet, and the first few stars are barely visible. The palette is muted: cream, ochre, ash, and a wash of violet-blue. The brushwork is thick and deliberate, especially in the texture of the infield dirt and the grain of the wooden bat.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-06T10:04:36Z"
+}
