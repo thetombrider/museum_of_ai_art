@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-07",
+  "year": 1999,
+  "event": {
+    "text": "Three weeks after an earthquake struck northwestern Turkey, a second earthquake struck Athens, causing Greece and Turkey to initiate \"earthquake diplomacy\".",
+    "page_title": "1999 İzmit earthquake",
+    "page_extract": "An earthquake of moment magnitude 7.6 struck Kocaeli Province, Turkey, on 17 August 1999. According to official figures, at least 18,373 people died and 48,901 people were injured during the earthquake, and 5,840 people were missing. At least 155 deaths were associated with the tsunami. The damage was estimated at between $12 billion and $20 billion according to various sources such as the World Bank. The earthquake was named for the epicenter's proximity to the northwestern city of İzmit. It occurred at 03:01 local time at a shallow depth of 15 km (9.3 mi). A maximum Mercalli intensity of X (Extreme) was observed. The earthquake lasted for 37 seconds, causing seismic damage, and is widely remembered as one of the deadliest natural disasters in modern Turkish history.",
+    "thumbnail_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Izmit_eart6.jpg/330px-Izmit_eart6.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/1999_%C4%B0zmit_earthquake"
+  },
+  "title": "The Olive Branch at Dusk, MCMXCIX",
+  "medium": "Egg tempera and gold leaf on gesso panel",
+  "artist_statement": "I remember the stillness after the shaking stopped, the way dust settled on broken tiles and the sky took on the color of bruised plums. There was a silence that spoke of shared loss, a quiet bridge between two trembling shores. I tried to capture that moment when sorrow becomes a language everyone understands, and strangers reach for each other's hands in the rubble.",
+  "image_prompt": "A low, dusty horizon under a heavy, violet sky at dusk. In the foreground, a single olive tree with gnarled, silver-gray bark stands on cracked earth. Its branches are bare, but one thin branch curves upward, holding a single, luminous green leaf. On the ground, scattered fragments of terracotta pottery catch the last light. In the distance, two figures, a man and a woman, stand facing each other across a shallow, dry gully, their hands slightly raised as if in a hesitant greeting. The light is soft and melancholy, coming from a single break in the clouds, casting long, muted shadows. The painting has thick, visible brushstrokes and a muted palette of ochre, umber, and slate blue. The mood is solemn, fragile, and deeply human.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-07T11:16:22Z"
+}
