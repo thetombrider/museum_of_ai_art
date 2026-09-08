@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-08",
+  "year": 1991,
+  "event": {
+    "text": "At the Tailhook Association symposium in Las Vegas, U.S. Navy and Marine Corps aviators were alleged to have sexually assaulted 90 persons.",
+    "page_title": "Tailhook Association",
+    "page_extract": "The Tailhook Association is a U.S.-based non-profit organization supporting the interests of sea-based aviation, with emphasis on aircraft carriers. The word tailhook refers to the hook underneath the tail of the aircraft that catches the arresting wire suspended across the flight deck in order to stop the landing plane quickly.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/TailHook_insignia.png/330px-TailHook_insignia.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Tailhook_Association"
+  },
+  "title": "The Stained Carpet, MCMXCI",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I keep returning to the moment after the last handshake, when the room is still warm but the laughter has faded. There's a particular quality of light in corridors where so many have passed through—it diffuses memory, softens edges, but never washes away the stain. I paint the carpet because it holds the weight of every step, every gesture, every silence that followed.",
+  "image_prompt": "A dimly lit hotel corridor with thick patterned carpet in deep burgundy and gold, flecked with darker, almost black stains near the baseboards. The light comes from a single sconce halfway down the hall, casting long shadows of an empty metal chair and a half-open door to a room where the carpet is crumpled and askew. The walls are papered with a faded floral pattern, slightly peeling at the edges. The air feels thick, warm, with a faint haze catching the light. A single high-heeled shoe lies on its side near the door, its patent leather scuffed. The composition is off-center, tilted slightly, like a snapshot taken by someone who cannot look straight at what they saw.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-08T10:25:04Z"
+}
