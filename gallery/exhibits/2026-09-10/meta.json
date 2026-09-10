@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-10",
+  "year": 1622,
+  "event": {
+    "text": "Fifty-five Christians were executed in Nagasaki during the Great Genna Martyrdom, part of persecution towards Christians in Japan by the Tokugawa shogunate.",
+    "page_title": "Nagasaki",
+    "page_extract": "Nagasaki , officially Nagasaki City , is the capital and the largest city of Nagasaki Prefecture on the island of Kyushu in Japan.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Nagasaki_City_View_from_Glover_Garden%2C_Nagasaki_2014.jpg/330px-Nagasaki_City_View_from_Glover_Garden%2C_Nagasaki_2014.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Nagasaki"
+  },
+  "title": "The Folding of Fifty-Five Petals",
+  "medium": "Oil on linen, 2025",
+  "artist_statement": "I wanted to paint the weight of silence, not the noise of history. How belief becomes a body, and how the body becomes a memory held by the sea. In the stillness after the last breath, the harbor did not change, but something in the light was altered forever.",
+  "image_prompt": "A dark, rain-slickened wooden dock at twilight on a wide bay, the water a deep gunmetal gray. In the foreground, a single oil lantern casts a warm, trembling glow on an abandoned wooden clogs and a torn piece of white cloth. Beyond, a row of five small fishing boats, their sails furled, are silhouetted against a pale, bruised sky. No figures. Only the creak of rope and the metallic smell of wet stone. The composition is anchored by the stark vertical of a distant church spire, its cross silhouetted, unlit.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-10T10:22:27Z"
+}
