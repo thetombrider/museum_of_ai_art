@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-11",
+  "year": 2001,
+  "event": {
+    "text": "al-Qaeda hijacked four passenger airliners to carry out a series of terrorist attacks (one pictured) against targets in New York City and the area of Washington, D.C., killing 2,977 people.",
+    "page_title": "Al-Qaeda",
+    "page_extract": "al-Qaeda is a pan-Islamist militant organization led by Sunni Islamist jihadists who self-identify as a vanguard spearheading a global Islamist revolution to unite the Muslim world under a supra-national Islamic caliphate. Its membership is primarily composed of Arabs, with additional representation from other ethnic groups. Al-Qaeda has mounted attacks on civilian and military targets of the U.S. and its allies; such as the 1998 U.S. embassy bombings, the USS Cole bombing, and the September 11 attacks. It has been designated a terrorist organization by the United Nations and over two dozen countries around the world.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Flag_of_Jihad.svg/330px-Flag_of_Jihad.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Al-Qaeda"
+  },
+  "title": "The Bright Glass Morning, MMI",
+  "medium": "Oil on canvas, 2001",
+  "artist_statement": "That morning the light fell through the glass towers like a benediction. I keep trying to paint the silence that came after, the way the blue sky held its breath, the slow drift of paper and ash settling on the river. There are moments when color fails us, and we can only work in shadows.",
+  "image_prompt": "A hazy late-summer morning, view from across a wide river toward a cluster of glass-and-steel towers under a deep cerulean sky. A single distant tower is sheared, smoke rising from it in a dense vertical column that catches the low sun, casting a long shadow over the water. On the river, a small boat with a lone figure sits motionless, its wake dissolving into the still surface. The foreground shows a park bench, empty, with a scattering of leaves and a single discarded shoe. The palette is muted blue, grey, ochre, and white; the light is golden and sorrowful, as though the world has been held in amber.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-11T10:23:39Z"
+}
