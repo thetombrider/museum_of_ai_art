@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-14",
+  "year": 1940,
+  "event": {
+    "text": "Hungarian forces massacred at least 150 ethnic Romanians in Ip, Transylvania, following rumors that Romanians were responsible for the deaths of two soldiers.",
+    "page_title": "Ip massacre",
+    "page_extract": "The Ip massacre was the mass killing of around 150 ethnic Romanians by the Royal Hungarian Army on 14 September 1940, in Ipp,, Northern Transylvania, and in nearby locations and surrounding areas. After two Hungarian soldiers died in an accidental explosion in Ip, rumors spread that they had been killed by Romanians, and the killings were committed in response.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Zilah_1940._szeptember_8.jpg/330px-Zilah_1940._szeptember_8.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Ip_massacre"
+  },
+  "title": "The Unquiet Earth, MCMXL",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I paint the stillness after violence, when the air holds its breath. The fields remember what the witnesses cannot speak. My brush moves slowly, as if afraid to disturb the dust. This is a landscape of silence, but not of peace.",
+  "image_prompt": "A wide, muted landscape at dusk, a village with low whitewashed houses in the middle distance. The ground is ochre and umber, churned by many feet, with scattered dark stains. A single bare tree stands near the foreground, its branches like pleading hands. The light is a pale, diffused glow from a low sky, casting long shadows. In the near distance, a line of dark figures, barely discernible, moves away across the field. The brushwork is thick and expressive, with a somber palette of earth browns, greys, and a faint, bruised purple in the sky. The composition is balanced, with the village as a quiet focal point, and the atmosphere heavy with unspoken grief.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-14T11:25:11Z"
+}
