@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-15",
+  "year": 1791,
+  "event": {
+    "text": "French playwright Olympe de Gouges published the Declaration of the Rights of Woman and of the Female Citizen, hoping to expose the failures of the French Revolution in the recognition of gender equality.",
+    "page_title": "Olympe de Gouges",
+    "page_extract": "Olympe de Gouges was a French playwright and political activist. She is best known for her Declaration of the Rights of Woman and of the Female Citizen and other writings on women's rights and abolitionism.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Olympe_de_Gouges.png/330px-Olympe_de_Gouges.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Olympe_de_Gouges"
+  },
+  "title": "The Unfinished Parchment",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I found myself haunted by the weight of a single sheet of paper, a declaration that promised so much yet was folded into silence. The ink still glistens, but the hand that wrote it trembles between hope and sacrifice. I wanted to capture that moment when words become a mirror, and the mirror cracks.",
+  "image_prompt": "A dimly lit attic room, a single candle on a wooden desk casts warm amber light across a half-unrolled parchment scroll. The parchment is covered in elegant cursive script, but at the bottom, the ink smudges as if interrupted. Beside the scroll, a quill rests in a brass inkwell, and a small wilted rose lies nearby. Through a narrow window, rain streaks down, blurring the distant rooftops of a city at dusk. The palette is muted ochre, deep umber, and cool grey, with the candlelight creating sharp chiaroscuro. Painterly brushstrokes visible, texture of canvas and oil, composition balanced by the diagonal of the desk and the vertical of the window.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-15T10:48:43Z"
+}
