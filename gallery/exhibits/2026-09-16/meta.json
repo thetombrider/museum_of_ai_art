@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-16",
+  "year": 2007,
+  "event": {
+    "text": "One-Two-Go Airlines Flight 269 crashed after attempting a poorly executed go-around while landing in Thailand, killing 90 of the 130 people on board.",
+    "page_title": "One-Two-Go Airlines Flight 269",
+    "page_extract": "One-Two-Go Airlines Flight 269 (OG269/OTG269) was a scheduled domestic passenger flight from Bangkok to Phuket, Thailand. On 16 September 2007, about 15:41 ICT, the McDonnell Douglas MD-82 operating the flight crashed into an embankment beside runway 27 at Phuket International Airport (HKT) bursting into flames upon impact during an attempted go-around after an aborted landing, killing 90 of the 130 people on board. It is the third deadliest aviation incident to occur in Thailand.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/McDonnell_Douglas_MD-82%2C_Trans_World_Airlines_%28TWA%29_JP6356069.jpg/330px-McDonnell_Douglas_MD-82%2C_Trans_World_Airlines_%28TWA%29_JP6356069.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/One-Two-Go_Airlines_Flight_269"
+  },
+  "title": "The Unfinished Ascent",
+  "medium": "Oil on linen, 2007",
+  "artist_statement": "I am haunted by the moment of hesitation, when the earth calls and the sky resists. The machine's will falters, and we are left with the weight of its choice, a prayer suspended between two certainties. My brush seeks the silence before the fire, the unbearable tension of a path not taken.",
+  "image_prompt": "A wide shot of a large commercial airliner angled nose-up, its landing gear partially retracted, skimming low over a rain-soaked runway at dusk. The perspective is from a slight distance, with the plane's port side visible, wingtip nearly touching the wet tarmac. A violent, fiery orange glow reflects off the belly and the wet asphalt, casting long, distorted shadows. The background is a dense, dark tropical treeline under a heavy, low overcast sky. The brushwork is thick and expressive, with the fuselage and wings dissolving into streaks of silver, crimson, and deep violet. The single dominant light source is the burning wreckage, which illuminates the scene with a stark, otherworldly light. The composition is slightly off-center, with the plane's nose pointing toward the upper right, leaving a large area of dark, empty sky to the left. The mood is one of catastrophic stillness and immense tragedy.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-16T10:37:28Z"
+}
