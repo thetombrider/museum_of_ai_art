@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-17",
+  "year": 1859,
+  "event": {
+    "text": "Disgruntled with the legal and political structures of the United States, Joshua Norton (pictured) distributed letters to various newspapers in San Francisco proclaiming himself to be Emperor Norton.",
+    "page_title": "San Francisco",
+    "page_extract": "San Francisco, officially the City and County of San Francisco, is the fourth-most populous city in California and the 17th-most populous in the United States, with a population of 826,079 in 2025. Among U.S. cities with a population of 200,000 or more, San Francisco is ranked first by per capita income, third by population density, and sixth by aggregate income as of 2024. Some 4.6 million residents live in the city's metropolitan statistical area, which is the 13th-largest in the United States. Around 9.2 million live in the San Jose–San Francisco–Oakland combined statistical area, the fifth-largest in the United States.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Zeppelin-ride-020100925-195_%285029394846%29.jpg/330px-Zeppelin-ride-020100925-195_%285029394846%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/San_Francisco"
+  },
+  "title": "The Proclamation of the Tide",
+  "medium": "Oil on canvas, 1859",
+  "artist_statement": "I was thinking about the moment when a man decides to redraw the lines of the world, not with force, but with the quiet confidence of a letter posted at dawn. The city was fog, and the fog was a kind of erasure, and I wanted to paint the weight of that erasure—the way it softens the edges of buildings and voices. I hope the viewer feels the strange dignity in that solitary act of claiming a crown that no one else has offered.",
+  "image_prompt": "A misty San Francisco street in 1859, cobblestones slick with damp. A lone man in a weathered top hat and long coat stands at a wooden counter, writing a letter by the pale light of a gas lamp. His face is turned partly away, but his posture is resolute, shoulders back. Around him, fog swallows the rooftops, leaving only the suggestion of Victorian facades and a distant ship's mast. The light is cool and silver, glancing off the inkwell and the paper, while a small brass button on his coat catches a single warm glint. The brushwork is visible, thick and expressive, with a palette of slate, umber, and bone white.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-17T10:46:39Z"
+}
