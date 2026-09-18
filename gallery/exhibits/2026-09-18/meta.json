@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-18",
+  "year": 1796,
+  "event": {
+    "text": "War of the First Coalition: General Franz Petrasch's Austrian and Imperial troops stormed the French-held bridgehead over the Rhine river.",
+    "page_title": "War of the First Coalition",
+    "page_extract": "The War of the First Coalition was a set of wars between a coalition of several European powers and France fought between 1792 and 1797. The coalition was only loosely allied and fought without much coordination; each power wanted to annex a different part of France should they defeat the French, something that never occurred.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/War_of_the_first_coalition.jpg/330px-War_of_the_first_coalition.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/War_of_the_First_Coalition"
+  },
+  "title": "The Bridge at Dusk",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I stood on the bank and felt the cold weight of the river. There is a moment before any crossing when the air holds its breath. I tried to paint that silence, the way smoke clings to the stone and the light fails slowly. The men are small against the water, but their shadows are long.",
+  "image_prompt": "A wide stone bridge arches over dark, fast-moving water under a bruised orange and grey sky. On the far side, a cluster of figures in long coats and bicorne hats advance through low-hanging smoke, their bayonets catching the last rays of a hazy sun. On the near bank, a cannon lies abandoned, its wheels half-sunk in mud. The brushwork is loose and expressive, with thick impasto on the highlights and a subdued palette of ochre, slate, and lead white. A single light source from the left casts long shadows across the cobblestones.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-18T10:22:12Z"
+}
