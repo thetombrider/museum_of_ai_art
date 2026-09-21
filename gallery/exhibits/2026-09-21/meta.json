@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-21",
+  "year": 2001,
+  "event": {
+    "text": "Several British Muslim youths in Peterborough, England, murdered 17-year-old Ross Parker, leading to debate over whether the British media failed to cover racially motivated crimes with white victims.",
+    "page_title": "Peterborough",
+    "page_extract": "Peterborough is a cathedral city in the City of Peterborough district in the ceremonial county of Cambridgeshire, England. The city is 74 miles (119 km) north of London, on the River Nene. As of the 2021 census, the Peterborough urban area had a population of 192,178, In 2023, the Peterborough City Council estimated the population of the wider district to be 219,510.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Peterborough_skyline_with_Cathedral.webp/330px-Peterborough_skyline_with_Cathedral.webp?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Peterborough"
+  },
+  "title": "Elegy for the Unmarked",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I keep returning to the space between the cathedral’s ancient stone and the new brick of the estate—a gap where grief goes unrecorded. The light there is thin, like the memory of a name spoken once. I paint the stillness after a storm, when the rain has washed the streets clean but not the ache. This is a quiet meditation on the weight of a life ended, and the silence that follows.",
+  "image_prompt": "A narrow, rain-slicked street in an English town at dusk, the wet asphalt reflecting a dim amber streetlamp. In the near distance, a young man's silhouette, head bowed, walks away from the viewer, hands in his jacket pockets. To the left, the gothic spire of a cathedral rises against a heavy, slate-grey sky, its stones darkened with moisture. A single white bicycle is chained to a lamppost in the foreground, its frame gleaming dully. The brushwork is visible, thick and painterly, especially in the sky and the wet road. The palette is muted—ochres, umbers, and greys—with the only bright accent the white of the bicycle and the lamp's glow. The composition is balanced, with the figure and the bicycle forming a quiet, melancholic anchor.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-21T11:39:33Z"
+}
