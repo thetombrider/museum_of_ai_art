@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-22",
+  "year": 1914,
+  "event": {
+    "text": "First World War: The German submarine U-9 sank three Royal Navy cruisers, resulting in approximately 1,450 deaths.",
+    "page_title": "World War I",
+    "page_extract": "World War I, or the First World War, also known as the Great War, was a global conflict between two coalitions: the Allies and the Central Powers. One of the deadliest conflicts in history, World War I resulted in an estimated 15 to 22 million deaths, including those in war crimes and genocides. The war also helped spread the Spanish flu pandemic. The conflict saw important developments in weaponry, including the first large-scale use of machine guns, artillery, aircraft, chemical weapons, and tanks.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Bataille_de_Verdun_1916.jpg/330px-Bataille_de_Verdun_1916.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/World_War_I"
+  },
+  "title": "Beneath the Gray Unbroken",
+  "medium": "Oil on canvas, 1914",
+  "artist_statement": "I am drawn to the moment when the sea becomes a shroud. The light that day was thin, almost apologetic, as if the sky itself knew not to be bright. I wanted to capture the stillness after the chaos, the heavy silence that settles over water that has claimed so much. There is a tenderness in the way the waves keep their own counsel, and a terrible beauty in their indifference.",
+  "image_prompt": "A wide, painterly seascape in muted grays and slate blues. The sea is choppy but not stormy, with whitecaps catching a weak, diffused light from a overcast sky. In the middle distance, three dark shapes—the sterns of sinking cruisers—list at sharp angles, their hulls slick with water. A few small boats with figures in dark oilskins are scattered, barely visible. The foreground shows a large, detailed wave crest curling, its foam like lace. The light source is a single, faint glow breaking through the clouds, illuminating the scene from above left. The brushwork is visible, expressive, with thick impasto for the foam and thin glazes for the sky. The palette is limited: Payne's gray, ivory black, titanium white, and a touch of raw umber. Composition is balanced with a low horizon line, leaving two-thirds of the canvas to the vast, brooding sky.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-22T10:44:26Z"
+}
