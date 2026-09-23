@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-23",
+  "year": 1884,
+  "event": {
+    "text": "The French steamship Arctique ran aground on the northern coast of Cape Virgenes in Argentina; gold was discovered during the rescue effort, triggering the Tierra del Fuego Gold Rush.",
+    "page_title": "Cape Virgenes",
+    "page_extract": "Cape Virgenes is the southeastern promontory of continental Argentina in South America. A little to the south-west, the southernmost point of land is Punta Dúngeness. Ferdinand Magellan reached it on 21 October 1520 during the Spanish expedition to East Asia and discovered a strait, now called the Strait of Magellan in his honor. As 21 October was the feast day of Saint Ursula and the Eleven Thousand Virgins, he named the cape in their honor.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Capes_in_the_Americas.png/330px-Capes_in_the_Americas.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Cape_Virgenes"
+  },
+  "title": "The Stranding and the Glint",
+  "medium": "Oil on linen, 1884",
+  "artist_statement": "I stood on that cold shore, watching the iron hull groan against the rocks. The fog was thick, and I could taste the salt and the rust. But then, among the wreckage, the sun caught something—a small, sharp gleam. It was not hope, not exactly, but it was a kind of promise, hard and bright against the gray. I wanted to paint that moment when the world’s trouble turns, for an instant, into a possibility.",
+  "image_prompt": "A grounded steamship lies tilted on a rocky, windswept shore under a heavy, ochre-and-gray sky. The iron hull is dark with rust and barnacles, and a single lantern glows weakly on the deck. In the foreground, a man in a heavy wool coat and boots kneels among wet cobbles, his hand touching a small, jagged fleck of gold that catches a thin shaft of light from a break in the clouds. The sea is a churning slate green, flecked with white foam. The brushwork is thick and impasto, especially on the rocks and the metal, with a muted palette of browns, grays, and a single cold yellow highlight.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-09-23T10:34:49Z"
+}
