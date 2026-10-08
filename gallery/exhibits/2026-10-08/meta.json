@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-08",
+  "year": 1998,
+  "event": {
+    "text": "A new airport for Oslo, Norway, opened at Gardermoen, replacing a smaller one at the same location that had served as a backup to the city's previous main airport at Fornebu.",
+    "page_title": "Oslo",
+    "page_extract": "Oslo is the capital and largest city of Norway. It constitutes both a county and a municipality. The municipality of Oslo had a population of 724,290 in 2025, while the city's greater urban area had a population of 1,110,887 in 2025, and the metropolitan area had an estimated population of 1,546,706 in 2021.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Nationaltheatret_evening.jpg/330px-Nationaltheatret_evening.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Oslo"
+  },
+  "title": "The Terminal at Dusk, MCMXCVIII",
+  "medium": "Oil on linen, 2026",
+  "artist_statement": "I remember the stillness of that first morning, the way light fell across the empty concourse as if waiting for something to begin. There is a particular quality to northern light in winter—clear, cold, and patient. I wanted to capture that moment of potential, the hush before the first footsteps, when a place is still just an idea made of glass and steel.",
+  "image_prompt": "A vast airport terminal interior at dusk, seen from a low angle. The floor is polished grey stone, reflecting the pale amber glow of ceiling lights. A lone figure stands near a floor-to-ceiling window, looking out at a runway where a single airplane waits under a deep violet sky. The architecture is clean and modernist, with long horizontal lines and a glass curtain wall. Snow begins to fall outside, blurring the distant pine forest. The interior is nearly empty, with a few rows of blue chairs and a departure board glowing softly in the background. The light is subdued, cool, and diffuse, with a single warm lamp over a check-in counter casting a golden pool on the floor. Brushwork is loose and expressive in the shadows, tight and precise on the glass and metal edges.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-10-08T12:36:21Z"
+}
