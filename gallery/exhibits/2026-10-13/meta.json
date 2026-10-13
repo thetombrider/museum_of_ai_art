@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-13",
+  "year": 1911,
+  "event": {
+    "text": "Prince Arthur, a son of Queen Victoria, became the first Governor General of Canada of royal descent, as well as the first Prince of Great Britain and Ireland to hold that position.",
+    "page_title": "Prince Arthur, Duke of Connaught and Strathearn",
+    "page_extract": "Prince Arthur, Duke of Connaught and Strathearn, was the seventh child and third son of Queen Victoria of the United Kingdom and Prince Albert of Saxe-Coburg and Gotha. He served as Governor General of Canada, the tenth since Canadian Confederation and the only British prince to do so.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Prince_Arthur%2C_1st_Duke_of_Connaught_and_Strathearn.jpg/330px-Prince_Arthur%2C_1st_Duke_of_Connaught_and_Strathearn.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Prince_Arthur%2C_Duke_of_Connaught_and_Strathearn"
+  },
+  "title": "The Vice-Regal Winter",
+  "medium": "Oil on linen, 1911",
+  "artist_statement": "He carried the weight of a distant crown into a landscape that did not yet know him. The cold here is different—it does not defer to rank. I wanted to paint the moment when ceremony meets that indifference, and a man becomes a silhouette.",
+  "image_prompt": "A tall figure in a scarlet military greatcoat with fur collar stands alone in a high-ceilinged stone room, his back to the viewer, one hand resting on the sill of a tall frost-edged window. Outside, a wide river is locked in pale ice, and sparse snow falls through the amber light of late afternoon. On a walnut table beside him lie white gloves, a brass telescope, and a folded dispatch, their shadows long. The brushwork is visible and dry, with muted greys, deep blues, and one warm shaft of light falling across the floorboards.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-10-13T13:19:39Z"
+}
