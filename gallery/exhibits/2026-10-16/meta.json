@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-16",
+  "year": 1875,
+  "event": {
+    "text": "Brigham Young University was founded in Provo, Utah, United States.",
+    "page_title": "Brigham Young University",
+    "page_extract": "Brigham Young University (BYU) is a private research university in Provo, Utah, United States. It was founded in 1875 by religious leader Brigham Young and is the flagship university of the Church Educational System (CES) of the Church of Jesus Christ of Latter-day Saints.",
+    "thumbnail_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Brigham_Young_University_medallion.svg/330px-Brigham_Young_University_medallion.svg.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "wikipedia_url": "https://en.wikipedia.org/wiki/Brigham_Young_University"
+  },
+  "title": "The Founders' Vigil",
+  "medium": "Oil on linen, 1875",
+  "artist_statement": "I am drawn to the moment when a promise takes root in the earth. The light that morning felt like a blessing, soft and golden, as if the sky itself was leaning in to witness. I wanted to capture the quiet determination of those who first gathered, their hands empty but their hearts full of tomorrow.",
+  "image_prompt": "A vast, sunlit valley at dawn, with a distant mountain range under a pale blue sky. In the foreground, a group of men in dark, simple coats stand around a rough wooden table, one hand resting on a worn book, another pointing toward the horizon. The light is low and warm, casting long shadows and illuminating dust motes in the air. The brushwork is thick and expressive, with earthy tones of umber, ochre, and muted green, punctuated by the bright white of a single canvas tent. The composition is balanced, with the figures forming a stable triangle, their faces turned toward the light.",
+  "image": "painting.jpg",
+  "model": {
+    "curator": "deepseek/deepseek-v4-flash",
+    "image": "wavespeed-ai/flux-2-dev/text-to-image"
+  },
+  "generated_at": "2026-10-16T10:27:10Z"
+}
